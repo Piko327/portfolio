@@ -1,0 +1,23 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(84, 60, 78);
+    background: linear-gradient(166deg, rgba(84, 60, 78, 1) 48%, rgba(13, 79, 111, 1) 100%);
+}
+
+.home_img {
+ background-color: aqua;
+ position: flex;
+ width: 50%;
+ height: 20px;
+ object-fit: cover;
+}
+
+;
+
+.home_title {}
+
+.home_img {
+    width: 100vw;
+    height: 100vh;
+}

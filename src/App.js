@@ -1,17 +1,19 @@
 
 import './App.css';
+import { Home } from './Coponents/Home/Home';
 
 function App() {
   return ( 
+    
     <>
+     <Home/>
     {/* <Header/>
-      <Home/>
       <About/>
       <Project/>
-       */}
-       
-    </>
-  )
+       */}   
+    </>  
+    
+    )
 }
 
 export default App;
