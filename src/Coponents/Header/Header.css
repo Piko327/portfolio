@@ -1,4 +1,24 @@
+:root {
+    --white :#F1EDFF;
+    --purple: #7C2E3B;
+    --blue: #464572;
+  }
+  .header_nav
+  {
+   max-width:100vw;
+  }
+
+
 .header_ul
+{display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding:2rem;
+   background-color: var(--blue);
+
+}
+.header_li a
 {
-   color: aqua;
+   color: var(--white);
+ 
 }
