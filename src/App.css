@@ -133,5 +133,6 @@ table {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+ 
+  box-sizing: content-box;
 }
