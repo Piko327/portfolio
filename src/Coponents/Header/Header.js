@@ -14,6 +14,7 @@ export const Header = () => {
   };
   return (
     <>
+          <div className={visible ?"closed":"opened" }></div>
       <header className="header">
           <nav className={visible ?"header_nav active":"header_nav " }>
             <ul className="header_ul">
@@ -28,8 +29,8 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
-        <button className="material-symbols-outlined" onClick={dynamicNavbar}>
-          menu
+        <button className="material-symbols-outlined"  onClick={dynamicNavbar}>
+         {visible ? "menu":"close"}
         </button>
       </header>
     </>  )
