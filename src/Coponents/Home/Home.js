@@ -6,6 +6,7 @@ export const  Home =()=>
        <img className="home_img" src={picture}  alt="profile" />
        <p  className='home_decription'>front-end developer</p>
         <button className="home_btn">
+     
             Download CV
         </button>
     </div>
