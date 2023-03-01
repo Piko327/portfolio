@@ -4,14 +4,14 @@ export const Header = () => {
   const [visible, setVisible] = useState(true);
 
   const dynamicNavbar = (e) => {
- 
-    if (e.pageX<=935 && visible === true) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-   
+    if (e.pageX<=935 && visible === true)
+    setVisible(false) 
+     else 
+     setVisible(true);
   };
+
+
+
   return (
     <>
           <div className={visible ?"closed":"opened" }></div>
