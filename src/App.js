@@ -9,6 +9,9 @@ function App() {
     <>
      <Header/>
      <Home/>
+     <Home/>
+     <Home/>
+     <Home/>
     {/*
       <About/>
       <Project/>
