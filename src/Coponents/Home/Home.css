@@ -50,10 +50,11 @@
     font-weight: 600;
     font-style: italic;
     color: var(--white);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .home_second_title:hover {
     text-shadow:  var(--write-b)0px 0 3px;
+
 }
 
 .home_description
@@ -119,11 +120,12 @@
    }
    .home_title:hover {
     
-    transform: scale(1.1);
-}
-  .home_second_title
+    transform: scale(1.02);
+  }
+
+  .home_second_title:hover
   {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
     .home_img{
         order: -1;

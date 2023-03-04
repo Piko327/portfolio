@@ -1,0 +1,16 @@
+
+
+:root {
+    --purple:#806894;
+    --white: #d7b0fa;
+      --black: #241b2c;
+      --write-b:#5EADB5;
+      --write-b2:#a5eef7;
+      --write-b3:#304b50;
+    }
+
+.skills_section
+{height: ;
+ background: rgb(36,66,69);
+    background: linear-gradient(0deg, rgba(36,66,69,1) 15%, rgba(36,27,44,1) 59%);
+}
