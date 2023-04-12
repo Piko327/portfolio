@@ -1,116 +1,105 @@
+
 :root {
-  
+   --write:#ffffff;
+  --grey:#1c1b1b;
+  --blue:#3B50B2;
+   }
  
- 
-   --purple:#806894;
-   --white: #d7b0fa;
-     --blue: #241b2c;
-     
-     --write-b:#5EADB5;
-     --write-b2:#a5eef7;
-     --write-b3:#304b50;
-}
 
 .header {
-   box-shadow:var(--write-b) 0px 1px 8px;
+   box-shadow: rgb(0, 0, 0) 1px 1px 4px;
    display: flex;
    align-items: center;
-   background-color: var(--white);
+   background-color:#1c1b1b;
+   
    height: 4rem;
    position: sticky;
    top: 0;
-   width: 98.9vw;
    z-index: 100;
- 
-   
- 
+
 }
 
 .header_nav {
-   box-shadow:var(--write-b) 0px 0px 30px;
-   background-color:var(--purple);
-   width: 98.9vw;  
-  
+   box-shadow: var(--write) 0px 0px 30px;
+  background-color: #00000033;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+   width: 98.9vw;
+
 }
 
-.header_ul
-{
+.header_ul {
    display: flex;
-   justify-content:center
+   justify-content: center
 }
 
 .header_li {
    text-align: center;
    margin: 1rem 3rem;
-   
+
 }
 
-
 .header_li a {
-   color: var(--write-b3);
+   color:var(--write);
    text-decoration: none;
    font-weight: 600;
    font-size: 1.3rem;
    text-transform: uppercase;
-  transition: all 300ms ease-in-out;
-  font-family: 'Roboto', sans-serif;
-  
+   transition: all 300ms ease-in-out;
+   font-family: 'Roboto', sans-serif;
+   text-shadow: var(--blue)2px 2px 2px;
 }
 
-
-.header_li a:hover{
-   color:var(--write-b2);
+.header_li a:hover {
+  
    transform: scale(1.21);
-   text-shadow:  var(--write-b)0px 0 3px;
-   border-bottom: 2px solid var(--write-b);
-   
+
+
 }
 
 .material-symbols-outlined {
    margin-left: auto;
    margin-right: 1rem;
-   background-color:#806894;
+   background-color: var(--blue);
    border: none;
-   color: var(--white);
+   color: var(--write);
    display: none;
 }
 
 
 @media only screen and (max-width: 960px) {
 
-   .header_nav
-   {
+   .header_nav {
       position: absolute;
       left: 0;
       top: 4.1rem;
-      width: 98.9vw; 
+      width: 98.9vw;
       height: 40vh;
       z-index: 7;
       transition: all 300ms ease-in-out;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
    }
- 
- 
-   
+
+
+
    .header_ul {
       display: flex;
       flex-direction: column;
       height: 100%;
    }
-  .active
-   {  
-       top: -100rem;}
 
-
-   .material-symbols-outlined
-   {
-       
-      display:block;
+   .active {
+      top: -100rem;
    }
 
-   .opened
-   {position: absolute;
+
+   .material-symbols-outlined {
+
+      display: block;
+   }
+
+   .opened {
+      position: absolute;
       top: 0;
       left: 0;
       width: 100vw;
@@ -119,14 +108,7 @@
       z-index: 3;
       opacity: 0.2;
    }
-   .header_nav {
- 
-      background-color:var(--purple);
-  
-     
-   }
-   
+
+
+
 }
-
-
-
