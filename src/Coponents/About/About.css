@@ -28,10 +28,7 @@ text-align: center;
     
 }
 .card
-{border: 2px solid;
-    border-color:var(--write);
-    border-radius: 10px;
-    background-color: var(--white-grey);
+{
     margin: 3rem;
     display: flex;
     gap: 1rem;
@@ -41,22 +38,22 @@ text-align: center;
 
 .card_img
 {margin: 1rem;
-    border: 2px solid;
-    border-color: #3B50B2;
-    border-radius: 1px;
+    border: 1px solid;
+    border-color: var(--blue);
+    border-radius: 5px;
 width:80%;
 }
 .card_title
 {
     margin-top: 2rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1.2px;
     word-spacing: 1px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
-    color: var(--write);
+    color: var(--blue);
     font-size: 1.5rem;
-    transition: 0.3s;
+
 }
 
