@@ -1,68 +1,62 @@
 
+:root {
+    --write:#ffffff;
+   --grey:#1c1b1b;
+   --blue:#3B50B2;
+   --white-grey:#393838;
+    }
+  
 
-
-
-.skills_section
+    .slide-container
+    {
+        width: 100%;
+        background-color: var(--grey);
+        padding-top: 3rem;
+    }
+.education_title
 {
- background: rgb(36,66,69);
-    background: linear-gradient(0deg, rgba(36,66,69,1) 15%, rgba(36,27,44,1) 59%);
-}
+text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  word-spacing: 1px;
+  font-variant: normal;
+  font-weight: 500;
+  color: var(--write);
 
-.education_section
-{
-    min-width: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    
 }
-.slide-container
-{
-    max-width: 1120px;
-    width: 100%;
-    background-color: green;
-    padding: 0 40px;
-}
-.slide-content
-{
-    margin: 0 40px;
-}
-
-.image-content,
-.card-content
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    padding: 10px 14px;
-}
-.image-content
-{position: relative;
-    row-gap: 5px;
-}
-
 .card
-{   border: red solid ;
-    border-radius: 25px ;
-    width: 320px;
-}
-.card-image
-{
-    position: relative;
-    height: 150px;
-    width: 150px;
-}
-
-.card-image .card-img
-{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
+{border: 2px solid;
+    border-color:var(--write);
+    border-radius: 10px;
+    background-color: var(--white-grey);
+    margin: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.name
-{
-    font-size:18px;
-    font-weight: 500;
-    color: aqua;
+.card_img
+{margin: 1rem;
+    border: 2px solid;
+    border-color: #3B50B2;
+    border-radius: 1px;
+width:80%;
 }
+.card_title
+{
+    margin-top: 2rem;
+  padding: 0 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--write);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
