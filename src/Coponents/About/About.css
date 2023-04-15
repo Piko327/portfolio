@@ -8,3 +8,61 @@
     background: linear-gradient(0deg, rgba(36,66,69,1) 15%, rgba(36,27,44,1) 59%);
 }
 
+.education_section
+{
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slide-container
+{
+    max-width: 1120px;
+    width: 100%;
+    background-color: green;
+    padding: 0 40px;
+}
+.slide-content
+{
+    margin: 0 40px;
+}
+
+.image-content,
+.card-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 10px 14px;
+}
+.image-content
+{position: relative;
+    row-gap: 5px;
+}
+
+.card
+{   border: red solid ;
+    border-radius: 25px ;
+    width: 320px;
+}
+.card-image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.card-image .card-img
+{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.name
+{
+    font-size:18px;
+    font-weight: 500;
+    color: aqua;
+}

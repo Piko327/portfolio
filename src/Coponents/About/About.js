@@ -3,24 +3,12 @@ import React from 'react'
 const About = () => {
   return (
      <>
-     <section className='education_section'>
-   <div className='slide-content'>
-   <div className='slide-contnet'>
-    <div className='card-wrapper'>
-      <div className='card'>
-        <div className='image-content'></div>
-        <span className='overlay'></span>
-        <div className='card-image'>
-          <embed src="certificates\Java Advanced - January 2022 - Certificate.pdf"></embed>
-        </div>
-      </div>
-    </div>
-   </div>
-   </div>
 
+     <section className='education'>
 
+      
      </section>
-<section className='skills_section'>
+{/* <section className='skills_section'>
 <h1 className='skills_title'>
     SKILLS
 </h1>
@@ -34,7 +22,7 @@ const About = () => {
         <li className='skill'>TailWind</li>
         <li className='skill'>Firebase</li>
     </ul>
-</section>
+</section> */}
   </> 
   )
 }
