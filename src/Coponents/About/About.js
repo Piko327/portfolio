@@ -5,10 +5,10 @@ import Skills from './Skills/Skills'
 
 const About = () => {
   return (
-     <>
-   {/* <Education/> */}
+     <div className='about'>
+   <Education/>
    <Skills/>
-  </> 
+  </div> 
   )
 }
 
