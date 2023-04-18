@@ -1,101 +1,105 @@
+
 :root {
-   --white: #F1EDFF;
-   --purple: #7C2E3B;
-   --blue: #464572;
-   --white-effect: #aaa7b4;
-}
+   --write:#ffffff;
+  --grey:#1c1b1b;
+  --blue:#3B50B2;
+   }
+ 
 
 .header {
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   box-shadow: rgb(0, 0, 0) 1px 1px 4px;
    display: flex;
    align-items: center;
-   background-color: var(--blue);
+   background-color:#1c1b1b;
+   
    height: 4rem;
    position: sticky;
    top: 0;
-   width: 98.9vw;
    z-index: 100;
+
 }
 
 .header_nav {
-   background-color:var(--blue);
-   width: 98.9vw;  
-  
+   box-shadow: var(--write) 0px 0px 30px;
+  background-color: #00000033;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+   width: 98.9vw;
+
 }
 
-.header_ul
-{
+.header_ul {
    display: flex;
-   justify-content: space-around
+   justify-content: center
 }
 
 .header_li {
    text-align: center;
-   
-}
+   margin: 1rem 3rem;
 
+}
 
 .header_li a {
-   color: var(--white);
+   color:var(--write);
    text-decoration: none;
-   font-weight: 400;
-   font-size: 1.75rem;
-  transition: all 200ms;
-  font-style: italic;
+   font-weight: 600;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+   transition: all 300ms ease-in-out;
+   font-family: 'Roboto', sans-serif;
+   text-shadow: var(--blue)1px 1px 1px;
 }
 
-.header_li a:hover{
-   color: var(--white-effect);
-   text-decoration: none;
-   font-size: 1.75rem;
-   ;
+.header_li a:hover {
+  
+   transform: scale(1.21);
+
+
 }
 
 .material-symbols-outlined {
    margin-left: auto;
    margin-right: 1rem;
-   background-color: #464572;
+   background-color: var(--blue);
    border: none;
-   color: var(--white);
+   color: var(--write);
    display: none;
 }
 
 
 @media only screen and (max-width: 960px) {
 
-   .header_nav
-   {
+   .header_nav {
       position: absolute;
       left: 0;
       top: 4.1rem;
-      width: 98.9vw; 
+      width: 98.9vw;
       height: 40vh;
       z-index: 7;
       transition: all 300ms ease-in-out;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      
    }
- 
- 
-   
+
+
+
    .header_ul {
       display: flex;
       flex-direction: column;
       height: 100%;
    }
-  .active
-   {  
-       top: -100rem;}
 
-
-   .material-symbols-outlined
-   {
-       
-      display:block;
+   .active {
+      top: -100rem;
    }
 
-   .opened
-   {position: absolute;
+
+   .material-symbols-outlined {
+
+      display: block;
+   }
+
+   .opened {
+      position: absolute;
       top: 0;
       left: 0;
       width: 100vw;
@@ -104,8 +108,7 @@
       z-index: 3;
       opacity: 0.2;
    }
-   
+
+
+
 }
-
-
-
