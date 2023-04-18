@@ -14,6 +14,7 @@ export const Header = () => {
 
   return (
     <>
+          <div className={visible ?"closed":"opened" }></div>
       <header className="header">
           <nav className={visible ?"header_nav active":"header_nav " }>
             <ul className="header_ul">
