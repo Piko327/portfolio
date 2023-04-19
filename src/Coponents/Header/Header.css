@@ -7,55 +7,53 @@
  
 
 .header {
-   box-shadow: rgb(0, 0, 0) 1px 1px 4px;
+   box-shadow: rgb(45, 42, 42) 1px 1px 4px;
+   padding-top: 1rem;
    display: flex;
    align-items: center;
-   background-color:#1c1b1b;
-   
    height: 4rem;
    position: sticky;
-   top: 0;
+   top: -15px;
    z-index: 100;
-
+   background-color:#00000000;
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
 }
 
 .header_nav {
-   box-shadow: var(--write) 0px 0px 30px;
-  background-color: #00000033;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-   width: 98.9vw;
-
+   position: absolute;
+   left: 0;
+   top: 5rem;
+   width: 100%;
+   height: 50vh;
+   z-index: 8;
+   transition: all 300ms ease-in-out;
+   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+   background-color:var(--grey);
 }
 
 .header_ul {
+   height: 100%;
    display: flex;
-   justify-content: center
+      flex-direction: column;
+    justify-content: space-around;
 }
 
 .header_li {
    text-align: center;
    margin: 1rem 3rem;
-
 }
 
 .header_li a {
    color:var(--write);
    text-decoration: none;
-   font-weight: 600;
-   font-size: 1.3rem;
-   text-transform: uppercase;
+   font-size: 1.5rem;
+   letter-spacing: 3px;;
    transition: all 300ms ease-in-out;
-   font-family: 'Roboto', sans-serif;
-   text-shadow: var(--blue)1px 1px 1px;
+   font-family: sans-serif;
+   text-shadow: var(--grey)0px 0px 4px;
 }
 
-.header_li a:hover {
-  
-   transform: scale(1.21);
-
-
-}
 
 .material-symbols-outlined {
    margin-left: auto;
@@ -63,52 +61,10 @@
    background-color: var(--blue);
    border: none;
    color: var(--write);
-   display: none;
+   display: block;
+}
+.active {
+   top: -100rem;  
 }
 
 
-@media only screen and (max-width: 960px) {
-
-   .header_nav {
-      position: absolute;
-      left: 0;
-      top: 4.1rem;
-      width: 98.9vw;
-      height: 40vh;
-      z-index: 7;
-      transition: all 300ms ease-in-out;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   }
-
-
-
-   .header_ul {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-   }
-
-   .active {
-      top: -100rem;
-   }
-
-
-   .material-symbols-outlined {
-
-      display: block;
-   }
-
-   .opened {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #000000;
-      z-index: 3;
-      opacity: 0.2;
-   }
-
-
-
-}
