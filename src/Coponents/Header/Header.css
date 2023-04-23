@@ -1,11 +1,10 @@
-
 :root {
    --white: #cbcdd1;
    --primary: #1c1b1b;
    --accent: #3B50B2;
    --white-grey: #393838;
 }
- 
+
 
 .header {
    box-shadow: rgb(45, 42, 42) 1px 1px 4px;
@@ -16,7 +15,7 @@
    position: sticky;
    top: -15px;
    z-index: 100;
-   background-color:var(--primary);
+   background-color: var(--primary);
    backdrop-filter: blur(12px);
    -webkit-backdrop-filter: blur(12px);
 }
@@ -29,15 +28,15 @@
    height: 50vh;
    z-index: 8;
    transition: all 300ms ease-in-out;
-   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-   background-color:var(--white-grey);
+   box-shadow: var(--white-grey) 0px 0px 15px;
+   background-color: var(--white-grey);
 }
 
 .header_ul {
    height: 100%;
    display: flex;
-      flex-direction: column;
-    justify-content: space-around;
+   flex-direction: column;
+   justify-content: space-around;
 }
 
 .header_li {
@@ -46,7 +45,7 @@
 }
 
 .header_li a {
-   color:var(--write);
+   color: var(--white);
    text-decoration: none;
    font-size: 1.5rem;
    letter-spacing: 3px;;
@@ -57,15 +56,51 @@
 
 
 .material-symbols-outlined {
+   padding: 0px 3px;
    margin-left: auto;
    margin-right: 1rem;
    background-color: var(--accent);
    border: none;
    color: var(--write);
    display: block;
+
 }
+
 .active {
-   top: -100rem;  
+   top: -100rem;
 }
 
 
+@media only screen and (min-width: 768px) {
+
+
+   .material-symbols-outlined {
+      display: none;
+   }
+
+   .active {
+      top: 0;
+   }
+
+.header
+{
+   box-shadow: 0px 0px 0px;
+}
+   .header_nav {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: var(--primary);
+   }
+   .header_ul {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: end;
+   }
+
+   .header_li a {
+      margin-top: 2rem;
+   }
+}

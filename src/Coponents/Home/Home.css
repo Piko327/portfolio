@@ -11,13 +11,14 @@
 
 .home {
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap column ;
   align-items: center;
   gap: 1rem;
 
 }
 
 .home_title {
+  
   display: flex;
   margin-top: 2rem;
   padding: 1rem;
