@@ -56,7 +56,7 @@ const Skills = () => {
   return (
     <section className="skills_section">
       <div className="skills_container">
-        <h1 className="skills_title">SKILLS</h1>
+        <h1 className="skills_title"> Tech Stack</h1>
         <ul className="skills">
           {
             skills.map(({ id, title, image,color }) => (

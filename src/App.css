@@ -137,3 +137,8 @@ table {
  
   box-sizing: content-box;
 }
+
+body
+{
+  background-color: var(--primary);
+}
