@@ -1,16 +1,15 @@
 
-:root {
-    --write:#ffffff;
-   --grey:#1c1b1b;
-   --blue:#3B50B2;
-   --white-grey:#393838;
+    :root {
+        --white: #cbcdd1;
+        --primary: #1c1b1b;
+        --accent: #3B50B2;
+        --white-grey: #393838;
     }
-  
 
     .slide-container
     {
         width: 100%;
-        background-color: var(--grey);
+        background-color: var(--white-grey);
         padding-top: 3rem;
     }
 .education_title
@@ -23,7 +22,7 @@ text-align: center;
   word-spacing: 1px;
   font-variant: normal;
   font-weight: 800;
-  color: var(--blue);
+  color: var(--accent);
 
 
     
@@ -39,7 +38,7 @@ text-align: center;
 .card_img
 {margin: 1rem;
     border: 1px solid;
-    border-color: var(--blue);
+    border-color: var(--accent);
     border-radius: 5px;
 width:22rem;
 }
@@ -52,7 +51,7 @@ width:22rem;
     word-spacing: 1px;
     font-weight: 400;
     font-style: italic;
-    color: var(--write);
+    color: var(--white);
     font-size: 1.5rem;
 
 }

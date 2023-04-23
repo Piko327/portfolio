@@ -1,9 +1,10 @@
 
 :root {
-   --write:#ffffff;
-  --grey:#1c1b1b;
-  --blue:#3B50B2;
-   }
+   --white: #cbcdd1;
+   --primary: #1c1b1b;
+   --accent: #3B50B2;
+   --white-grey: #393838;
+}
  
 
 .header {
@@ -15,7 +16,7 @@
    position: sticky;
    top: -15px;
    z-index: 100;
-   background-color:#00000000;
+   background-color:var(--primary);
    backdrop-filter: blur(12px);
    -webkit-backdrop-filter: blur(12px);
 }
@@ -29,7 +30,7 @@
    z-index: 8;
    transition: all 300ms ease-in-out;
    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-   background-color:var(--grey);
+   background-color:var(--white-grey);
 }
 
 .header_ul {
@@ -51,14 +52,14 @@
    letter-spacing: 3px;;
    transition: all 300ms ease-in-out;
    font-family: sans-serif;
-   text-shadow: var(--grey)0px 0px 4px;
+   text-shadow: var(--white-grey)0px 0px 4px;
 }
 
 
 .material-symbols-outlined {
    margin-left: auto;
    margin-right: 1rem;
-   background-color: var(--blue);
+   background-color: var(--accent);
    border: none;
    color: var(--write);
    display: block;
