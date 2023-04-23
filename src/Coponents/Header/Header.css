@@ -15,9 +15,7 @@
    position: sticky;
    top: -15px;
    z-index: 100;
-   background-color: var(--primary);
-   backdrop-filter: blur(12px);
-   -webkit-backdrop-filter: blur(12px);
+
 }
 
 .header_nav {
@@ -28,8 +26,8 @@
    height: 50vh;
    z-index: 8;
    transition: all 300ms ease-in-out;
-   box-shadow: var(--white-grey) 0px 0px 15px;
-   background-color: var(--white-grey);
+
+  
 }
 
 .header_ul {
@@ -48,8 +46,7 @@
    color: var(--white);
    text-decoration: none;
    font-size: 1.5rem;
-   letter-spacing: 3px;
-   ;
+   letter-spacing: 3px; ;
    transition: all 300ms ease-in-out;
    font-family: sans-serif;
    text-shadow: var(--white-grey)0px 0px 4px;
