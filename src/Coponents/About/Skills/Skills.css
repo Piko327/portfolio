@@ -15,6 +15,7 @@
 .skills_container {
     background-color: var(--white-grey);
     border-radius: 15px;
+
 }
 
 .skills_title {
@@ -30,9 +31,11 @@
 
 .skills {
     display: flex;
-    padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: start;
+    gap: 0.75rem;
+ min-height: 40vh;
 }
 
 .skill {
