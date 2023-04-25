@@ -2,14 +2,14 @@ import  picture from  "./Subject.png"
 export const  Home =()=>
 {
    return <div className="home">
-      <div className="part">
+      <div className="first_part">
        <div className='home_title' >
         <p className="home_title_one">Hello</p> 
         <p>, I'm Fiki </p>
         </div>
        <img className="home_img" src={picture}  alt="profile" />
        </div>
-       <div className="part">
+       <div className="second_part">
      <div className='home_second_title'>
      <p className="home_second_title_one">front-end </p>
      <p className='home_second_title_second'>developer</p>

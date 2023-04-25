@@ -16,6 +16,21 @@
   gap: 1rem;
 }
 
+.first_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.second_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
 .home {
   display: flex;
   flex-flow: row wrap;
@@ -133,11 +148,14 @@
 
 @media only screen and (min-width: 768px) {
 
-  .part {
+  .first_part {
     width: 45%;
     gap: 2.25rem;
   }
-
+  .second_part {
+    width: 45%;
+    gap: 2.25rem;
+  }
   .home_title {
     margin-top: 3.25rem;
 
@@ -167,8 +185,18 @@
 
   .part {
     align-items: center;
-    gap: 4rem;
+    gap: 6rem;
   }
 
 
+  .first_part {
+   margin-top: 6rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  .second_part {
+    align-items: center;
+    margin-top: 2rem;
+    gap: 10rem;
+  }
 }
