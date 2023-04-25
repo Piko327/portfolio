@@ -21,7 +21,7 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 1rem;
-  min-height: 80vh;
+  min-height: 90vh;
 
 }
 
@@ -140,11 +140,18 @@
 
   .home_title {
     margin-top: 3.25rem;
+
   }
 
   .home_second_title {
     margin-top: 5rem;
+   flex-direction: row; 
   }
+  .home_second_title_second
+  {
+    padding:0rem 1rem;
+  }
+
 .home_img
 {
   width: 330px;
@@ -162,10 +169,6 @@
     align-items: center;
     gap: 4rem;
   }
-  .home_img
-{
-  width: 390px;
-  height: 360px;
-}
+
 
 }

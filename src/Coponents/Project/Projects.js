@@ -12,7 +12,7 @@ function Projects() {
      <li>
       <article className='project'>
         <img src='/project/albumStore.png' className='project_img' alt='albumStore'></img>
-        <div className='pseudo' />
+     
         <h3 className='project_title'>Album Store</h3>
         <div  className='btn_container'>
       <a  href="https://album-store-ffa39.web.app/" target="_blank" rel="noopener noreferrer">
@@ -46,8 +46,10 @@ function Projects() {
      </li> 
      <li>
       <article className='project'>
+      
         <h3 className='project_title'>Example </h3>
         <div>
+        
       <a  href="https://bobbyhadz.com" target="_blank" rel="noopener noreferrer">
         <button className='btn'>Visit</button>
       </a>
