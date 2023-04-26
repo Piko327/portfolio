@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: start;
     gap: 0.75rem;
- min-height: 40vh;
+ min-height: 30vh;
 }
 
 .skill {
@@ -46,7 +46,7 @@
 }
 
 .skill_img {
-     width: 6rem;
+     width: 4rem;
      }
 
 
@@ -66,8 +66,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
+    .skills
+    {
+        gap: 1rem;
+    }
 .skill_img {
-    width: 8rem;
+    width: 6rem;
     }
 
 }
@@ -79,8 +83,11 @@
 {
     
     .skill_img {
-        width: 10rem;
+        width: 7rem;
         }
-    
+        .skills
+        {
+            gap: 2rem;
+        }
     }
     

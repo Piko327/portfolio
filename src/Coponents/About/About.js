@@ -6,8 +6,9 @@ import Skills from './Skills/Skills'
 const About = () => {
   return (
      <div className='about'>
+      <Skills/>
    <Education/>
-   <Skills/>
+  
   </div> 
   )
 }
