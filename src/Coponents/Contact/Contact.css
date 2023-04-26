@@ -6,10 +6,21 @@
     --white-grey: #393838;
 }
 
+.contact_container
+{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+   padding-bottom: 5rem;
+}
 .contact_title
 {
-    margin: 2rem;
+ 
+ display: block;
     text-align: center;
+ margin: 3rem;
 }
 .contact_main_title {
     padding: 1rem;
@@ -34,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--primary);
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .contact_card
@@ -68,11 +79,12 @@
     margin-top:4rem; 
 }
 
-.Contact_inputs
+.contact_inputs
 {  display: flex;
-    flex-direction: column;
-    padding: 2rem;
+    flex-direction:column;
+    padding: 0rem 3rem;
     background-color: var(--primary);
+    
 }
           
 .contact_content
@@ -112,7 +124,27 @@
 
 }
 
-.send_btn
-{
 
+.send_btn {
+    border: 1px solid var(--primary);
+    padding: 8px 2px;
+    width: 5rem;
+    background-color: var(--primary);
+    color: var(--accent);
+    letter-spacing: 3px;
+    z-index: 10;
+    font-size: 16px;
+}
+
+.send_btn:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+}
+
+.email
+{
+    padding: 4rem 2rem;
 }
