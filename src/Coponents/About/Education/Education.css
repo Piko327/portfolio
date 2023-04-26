@@ -13,7 +13,8 @@
 }
 
 .education_title {
-    text-align: center;
+  
+
     font-family: sans-serif;
     font-size: 1.75rem;
     text-transform: uppercase;
@@ -22,11 +23,15 @@
     font-variant: normal;
     font-weight: 400;
     color: var(--white);
-
-
-
-
-
+  text-align: center;
+}
+.eudcation_icon
+{
+    color: var(--accent);
+   vertical-align:middle;
+   font-size: 2.25rem;
+   padding: 0rem 1rem;
+   rotate: -15deg;
 }
 
 .card {

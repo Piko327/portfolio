@@ -44,15 +44,41 @@ background-color:var(--primary);
 }
 
 .header_li a {
+   position: relative;
    color: var(--white);
    text-decoration: none;
+   padding: 0 10px;
    font-size: 1.5rem;
    letter-spacing: 3px; ;
    transition: all 300ms ease-in-out;
-   font-family: sans-serif;
+   font-family: "Popoins",sans-serif;
    text-shadow: var(--white-grey)0px 0px 4px;
 }
+.header_li a::after
+{
+content: "";
+position: absolute;
+background-color: var(--accent);
+height: 3px;
+width: 0;
+left: 0;
+bottom:-10px;
+transition: 300ms;
 
+}
+
+.header_li a:hover::after
+{
+content: "";
+position: absolute;
+background-color: var(--accent);
+height: 3px;
+width: 100%;
+left: 0;;
+bottom:-10px;
+
+
+}
 
 .material-symbols-outlined {
    padding: 0px 3px;

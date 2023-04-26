@@ -6,6 +6,7 @@ import "swiper/swiper.min.css";
 import Card from "./Card";
 import "swiper/css/effect-coverflow";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
+import { RiBookletLine } from 'react-icons/ri';
 
 const Education = () => {
   const { width } = useWindowDimensions();
@@ -33,7 +34,7 @@ useEffect(() => {
   return (
     <section className="education">
       <div className="slide-container">
-        <h1 className="education_title"> education</h1>
+        <h1 className="education_title"><RiBookletLine className="eudcation_icon"/> education</h1>
       
          <Swiper
         effect={"coverflow"}

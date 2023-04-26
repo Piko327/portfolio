@@ -10,7 +10,7 @@ const Contact = () => {
       </div>
     <section className="contact_container">
       <ul className="card_container">
-      <h3 className="input_title">Connect me</h3>
+      <h3 className="input_title">Talk to me</h3>
         <li className="contact_card">
           <AiOutlineMail className="icon" />
           <h3 className="contact_card_title">Email</h3>
