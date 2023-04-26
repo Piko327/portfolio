@@ -1,4 +1,4 @@
-import { EffectCoverflow, Pagination } from "swiper"
+import { EffectCoverflow, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import React, { useEffect, useState } from "react";
@@ -12,7 +12,7 @@ const Education = () => {
   const [slidesPerViewCount, setSlidesPerViewCount] = useState(1);
 
   const setslidesPerView = (width) => {
-    if (width >= 902 && width <1200) {
+    if (width >= 902 && width < 1200) {
       setSlidesPerViewCount(2);
     } else if (width >= 1200) {
       setSlidesPerViewCount(3);
@@ -28,23 +28,23 @@ const Education = () => {
     <section className="education">
       <div className="slide-container">
         <h1 className="education_title"> education</h1>
-      
-         <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={slidesPerViewCount}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 10,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
+
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={slidesPerViewCount}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 10,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
           <SwiperSlide>
             <Card
               img="/certificates/JS Advanced - September 2022 - Certificate.jpeg"
