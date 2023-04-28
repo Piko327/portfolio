@@ -83,7 +83,9 @@
 {  display: flex;
     flex-direction:column;
     padding: 0rem 3rem;
+    align-items: center;
     background-color: var(--primary);
+  gap:2rem;
     
 }
           
@@ -97,7 +99,7 @@
     background-color: var(--primary);
     border: 3px solid var(--white-grey);
     border-radius: 15px;
-    padding: 1.75rem;
+    padding: 2rem 2rem;
     width: 80%;
     color: var(--white);
     font-size: 1rem;
@@ -105,7 +107,7 @@
 .contact-input:focus
 {
     outline: none;
-    cursor: pointer;
+    
 }
 
 .input_title
@@ -124,7 +126,10 @@
 
 }
 
-
+.respMessage
+{
+    
+}
 .send_btn {
     border: 1px solid var(--primary);
     padding: 8px 2px;
@@ -144,7 +149,22 @@
     transition: 300ms ease-in-out;
 }
 
-.email
+
+.contact_container .email
+{padding: 5rem 2rem;
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+.contact-input
 {
-    padding: 4rem 2rem;
+   width: 38em;
+}
+
+  
 }
