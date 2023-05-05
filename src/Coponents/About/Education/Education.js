@@ -32,7 +32,7 @@ useEffect(() => {
   }, [width]);
 
   return (
-    <section className="education">
+    <section className="education" >
       <div className="slide-container">
         <h1 className="education_title"><RiBookletLine className="eudcation_icon"/> education</h1>
       

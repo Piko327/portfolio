@@ -22,7 +22,7 @@ export const Header = () => {
                 <a href="#about">About</a>
               </li>
               <li className="header_li ">
-                <a href="#project">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className="header_li">
                 <a href="#contact">Contact</a>
