@@ -1,4 +1,4 @@
-import  picture from  "./Subject.png"
+import picture from "./Subject.png"
 export const  Home =()=>
 {
    return <div className="home">
