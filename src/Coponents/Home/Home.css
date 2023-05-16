@@ -111,7 +111,7 @@
   border-radius: 100%;
   -webkit-box-shadow: 5px 5px 38px 10px rgba(0, 0, 0, 0.35);
   box-shadow: 1px 1px 10px 1px var(--accent);
-  object-fit: contain;
+  object-fit:contain;
 }
 
 
@@ -159,10 +159,9 @@
   }
 
   .home_img {
-    width: 320px;
-    height: 300px;
+    width: 400px;
+    height: 380px;
   }
-
 
 }
 
@@ -203,8 +202,8 @@
 
 
   .home_img {
-    width: 400px;
-    height: 380px;
+    width: 420px;
+    height: 400px;
   }
 
 }
