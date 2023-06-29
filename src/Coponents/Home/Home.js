@@ -23,7 +23,7 @@ export const  Home =()=>
        </span>
         <div>
       <a href="https://drive.google.com/u/1/uc?id=1PnZAUiez7TCorPdk7-jbBtRrwRFdzc5q&export=download">
-        <button  className="home_btn">Dowload CV</button>
+        <button  className="home_btn">Download CV</button>
       </a>
     </div>
 

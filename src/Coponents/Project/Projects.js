@@ -49,6 +49,45 @@ function Projects() {
             </div>
           </article>
         </li>
+
+
+        <li>
+          <article className="project">
+            <img
+              src="/project/T-ShopImg.png"
+              className="project_img"
+              alt="Ecomerse"
+            ></img>
+
+            <p className="project_description">
+            Our ecommerce website is an online platform where customers can browse and purchase a variety of products. With a user-friendly interface, customers can easily find and buy their desired items. 
+            </p>
+            <div className="btn_container">
+              <div>
+                <a
+                  href="https://online-shop-brown.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn">
+                    <AiOutlinePaperClip />
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/Piko327/OnlineShop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn">
+                    <AiFillGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
       </ul>
     </section>
   );
