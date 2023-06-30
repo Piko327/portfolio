@@ -22,7 +22,7 @@ export const  Home =()=>
          / React / CSS / HTML 
        </span>
         <div>
-      <a href="https://drive.google.com/u/1/uc?id=1PnZAUiez7TCorPdk7-jbBtRrwRFdzc5q&export=download">
+      <a href="https://drive.google.com/u/2/uc?id=17243vCxhMQK8Oqo990X1qTbYKnaxriK2&export=download">
         <button  className="home_btn">Download CV</button>
       </a>
     </div>
