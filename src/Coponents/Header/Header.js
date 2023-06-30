@@ -17,7 +17,7 @@ export const Header = () => {
           <div className={visible ?"closed":"opened" }></div>
       <header className="header">
           <nav className={visible ?"header_nav active":"header_nav " }>
-            <ul className="header_ul" onClick={dynamicNavbar}>
+            <ul className="header_ul" >
               <li className="header_li">
                 <a href="#about">About</a>
               </li>
