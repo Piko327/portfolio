@@ -178,7 +178,8 @@
   margin-right: 0.25rem;
 }
   .home {
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .home_description {

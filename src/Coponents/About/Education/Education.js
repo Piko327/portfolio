@@ -36,7 +36,7 @@ useEffect(() => {
       <div className="slide-container">
         <h1 className="education_title"><RiBookletLine className="eudcation_icon"/> education</h1>
       
-         <Swiper
+         <Swiper className='swiper'
         effect={"coverflow"}
         grabCursor={true}
         navigation
