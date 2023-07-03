@@ -1,4 +1,6 @@
 import picture from "./Subject.png";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+
 export const Home = () => {
   return (
     <div className="home">
@@ -18,8 +20,28 @@ export const Home = () => {
           A passionate developer having an expirience of bulding Web Sites and
           Aplications with JavaScript / React / CSS / HTML
         </span>
+        <div className="home_icons">
+          <a
+            className="home_icon"
+            href="https://www.instagram.com/fikiivanovv/"
+          >
+            <AiFillInstagram />
+          </a>
+          <a
+            className="home_icon"
+            href="https://www.linkedin.com/in/fiki-ivanov-394463176/"
+          >
+            <AiFillLinkedin />
+          </a>
+          <a className="home_icon" href="https://github.com/fikiivanov">
+            <AiFillGithub />
+          </a>
+        </div>
         <div>
-          <a href="https://drive.google.com/file/d/1BPyVY3XCUVpI8xtueIH7fP1cJJBM_Wun/view?usp=sharing">
+          <a
+            className="home_icon"
+            href="https://drive.google.com/file/d/1BPyVY3XCUVpI8xtueIH7fP1cJJBM_Wun/view?usp=sharing"
+          >
             <button className="home_btn">Download CV</button>
           </a>
         </div>

@@ -115,6 +115,25 @@
   object-fit: contain;
 }
 
+.home_icons {
+
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+
+}
+
+.home_icon {
+  color: var(--white);
+}
+
+.home_icon:hover {
+  scale: 1.2;
+  transition: 300ms ease-in-out;
+
+
+}
+
 
 .home_img:hover {
   transform: scale(1.01);
@@ -190,7 +209,7 @@
   }
 
   .second_part {
-    padding-top: 5rem;
+    padding-top: 3rem;
     align-items: center;
     margin-top: 2rem;
     gap: 2rem;
