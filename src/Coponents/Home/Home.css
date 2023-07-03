@@ -95,8 +95,8 @@
   font-family: sans-serif;
   margin-bottom: 2rem;
   color: var(--white);
-  font-size: 1.5rem;
-  letter-spacing: 3px;
+  font-size: 1.35rem;
+  letter-spacing: 2px;
   line-height: 2rem;
   text-align: center;
   padding: 0rem 1rem;
@@ -106,14 +106,14 @@
   background-color: var(--white-grey);
   cursor: pointer;
   width: 400px;
-  height: 380px;
+  height: 280px;
   transition: .5s;
   width: 100%;
   filter: brightness(85%);
   border-radius: 100%;
   -webkit-box-shadow: 5px 5px 38px 10px rgba(0, 0, 0, 0.35);
   box-shadow: 1px 1px 10px 1px var(--accent);
-  object-fit:contain;
+  object-fit: contain;
 }
 
 
@@ -122,6 +122,7 @@
 }
 
 .home_btn {
+
   display: block;
   width: 10rem;
   height: 1.4rem;
@@ -134,7 +135,7 @@
   text-transform: uppercase;
   border: 2px solid var(--white);
   transition: 0.3s;
- 
+
 }
 
 .home_btn:hover {
@@ -162,7 +163,7 @@
 
   .home_img {
     width: 400px;
-    height: 380px;
+    height: 340px;
   }
 
 }
@@ -172,14 +173,9 @@
 @media only screen and (min-width: 992px) {
 
 
-.home_second_title_one
-{
-  align-self: center;
-  margin-right: 0.25rem;
-}
-  .home {
-    justify-content: center;
-    gap: 1rem;
+  .home_second_title_one {
+    align-self: center;
+    margin-right: 0.25rem;
   }
 
   .home_description {
@@ -188,13 +184,14 @@
   }
 
   .first_part {
-    margin-top: 4rem;
+    margin-top: 2rem;
     align-items: center;
     gap: 3rem;
+    padding-bottom: 3rem;
   }
 
   .second_part {
-    padding-top: 7rem;
+    padding-top: 5rem;
     align-items: center;
     margin-top: 2rem;
     gap: 2rem;
@@ -202,7 +199,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
 
   .home_img {
     width: 420px;

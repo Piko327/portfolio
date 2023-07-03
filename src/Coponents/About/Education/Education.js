@@ -35,7 +35,11 @@ useEffect(() => {
     <section className="education" >
       <div className="slide-container">
         <h1 className="education_title"><RiBookletLine className="eudcation_icon"/> education</h1>
-      
+        <div className="education_desc">
+ <p>
+In my journey as a web developer, I've delved into various courses that have shaped my skills and knowledge. The JS Application course served as a solid foundation, introducing me to the world of web application development. I learned about handling HTTP requests, working with REST APIs, and implementing authentication systems. It was an eye-opening experience that allowed me to understand the architecture behind JavaScript applications.
+</p>
+      </div>
          <Swiper className='swiper'
         effect={"coverflow"}
         grabCursor={true}
@@ -51,7 +55,7 @@ useEffect(() => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination,Navigation]}
-        className="mySwiper"
+  
       >
           <SwiperSlide>
             <Card
@@ -91,6 +95,16 @@ useEffect(() => {
           </SwiperSlide>
           ...
         </Swiper>
+      </div>
+      <div className="education_desc">
+
+<p>
+As my learning continued, I deepened my understanding through the JavaScript Advanced course. This course enabled me to explore the core aspects of JavaScript, including functions, arrays, and objects. I gained valuable insights into writing clean and efficient code, empowering me to create dynamic and interactive web experiences.
+</p>
+<p>
+Combining the knowledge I acquired from these courses, I became well-versed in web development practices. I now possess the ability to design and build robust software systems, leveraging my understanding of JavaScript application architecture and advanced JavaScript concepts.
+</p>
+
       </div>
     </section>
   );
