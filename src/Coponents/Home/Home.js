@@ -40,8 +40,7 @@ export const Home = () => {
         <div>
           <a
             className="home_icon"
-            href="https://drive.google.com/file/d/1BPyVY3XCUVpI8xtueIH7fP1cJJBM_Wun/view?usp=sharing"
-          >
+href="https://drive.google.com/file/d/1pKHONMrRSZmZfDa4neWNE0gWuZ2tamRW/view?usp=sharing"          >
             <button className="home_btn">Download CV</button>
           </a>
         </div>
