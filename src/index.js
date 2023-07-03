@@ -5,7 +5,7 @@ import "./Coponents/Home/Home.css";
 import "./Coponents/Header/Header.css";
 import "./Coponents/About/Education/Education.css";
 import "./Coponents/About/Skills/Skills.css";
-import "./Coponents/Project/Projects.css";
+import "./Coponents/Projects/Projects.css";
 import "./Coponents/Contact/Contact.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
