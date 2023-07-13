@@ -15,7 +15,7 @@ function Projects() {
     },
   ];
   return (
-    <section className="projects_selection" >
+    <section className="projects_selection" id="projects" >
       <div className="title_container">
         <h2 className="second_title">What i do</h2>
         <h1 className="main_title">My Projects</h1>
