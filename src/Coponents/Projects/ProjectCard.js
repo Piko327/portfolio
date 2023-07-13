@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Link} from "react-router-dom";
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({ project }) => {
   return (
- 
     <article className="projectCard">
       <h1 className="projectCard_title">{project.title}</h1>
       <img
@@ -13,11 +13,12 @@ const ProjectCard = ({project}) => {
         alt="albumStore"
       ></img>
       <div className="projectCard_hover">
-        <a href="" className="projectCard_hover_btn">View more</a>
+      <a href={project.url} className="projectCard_hover_btn" >
+          Demo
+          </a>
       </div>
     </article>
+  );
+};
 
-  )
-}
-
-export default ProjectCard
+export default ProjectCard;

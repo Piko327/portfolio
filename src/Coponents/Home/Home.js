@@ -17,8 +17,8 @@ export const Home = () => {
           <p className="home_second_title_second">developer</p>
         </div>
         <span className="home_description">
-          A passionate developer having an expirience of bulding Web Sites and
-          Aplications with JavaScript / React / CSS / HTML
+        Passionate developer with experience building websites and
+          Apps with JavaScript / React / CSS / HTML
         </span>
         <div className="home_icons">
           <a

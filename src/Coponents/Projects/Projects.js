@@ -6,10 +6,12 @@ function Projects() {
     {id:1,
       title: "Music Library",
       img: "/project/AlbumStore.png",
+      url:"https://album-store-ffa39.web.app/"
     },
     {id:2,
       title: "Online Shop",
       img: "/project/T-ShopImg.png",
+      url:"https://online-shop-brown.vercel.app/"
     },
   ];
   return (
@@ -20,7 +22,7 @@ function Projects() {
       </div>
       <ul className="projectCard_container">
         {projects.map((project)=> 
-       <li> <ProjectCard key={project.id} project={project} /></li>
+       <li key={project.id}> <ProjectCard  project={project} /></li>
         )}
       </ul>
     </section>
