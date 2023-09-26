@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom";
 import picture from "./Subject.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 

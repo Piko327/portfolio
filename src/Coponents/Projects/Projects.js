@@ -1,19 +1,9 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { projects } from "../../utils/projectData";
 
 function Projects() {
-  const projects = [
-    {id:1,
-      title: "Music Library",
-      img: "/project/AlbumStore.png",
-      url:"https://album-store-ffa39.web.app/"
-    },
-    {id:2,
-      title: "Online Shop",
-      img: "/project/T-ShopImg.png",
-      url:"https://online-shop-brown.vercel.app/"
-    },
-  ];
+
   return (
     <section className="projects_selection" id="projects" >
       <div className="title_container">

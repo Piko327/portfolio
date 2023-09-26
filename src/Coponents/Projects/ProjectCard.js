@@ -13,9 +13,10 @@ const ProjectCard = ({ project }) => {
         alt="albumStore"
       ></img>
       <div className="projectCard_hover">
-      <a href={project.url} className="projectCard_hover_btn" >
-          Demo
-          </a>
+      <Link to={`/Details/${project.id}`} className="projectCard_hover_btn" >
+   
+          Details
+          </Link>
       </div>
     </article>
   );

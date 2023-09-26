@@ -5,7 +5,10 @@ export const Header = () => {
 
   const dynamicNavbar = (e) => {
     if (e.pageX<=935 && visible === true)
+  {
     setVisible(false) 
+    console.log("amet")
+  } 
      else 
      setVisible(true);
   };
@@ -17,7 +20,7 @@ export const Header = () => {
           <div className={visible ?"closed":"opened" }></div>
       <header className="header">
           <nav className={visible ?"header_nav active":"header_nav " }>
-            <ul className="header_ul" >
+            <ul className="header_ul"  onClick={dynamicNavbar}>
               <li className="header_li">
                 <a href="#about">About</a>
               </li>
