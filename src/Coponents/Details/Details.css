@@ -52,4 +52,35 @@ padding: 2rem 0rem 5rem 0rem;
     transform: scale(1.05);
     box-shadow: 0px 0px 5px 1px var(--white);
   }
+
+  @media screen and (min-width: 800px) {
+   .details
+   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+   }
+   .details_tittle
+   {
+    width: 100vw;
+    text-align: center;
+    margin: 4rem 4rem;
+   }
+   .details_desc
+   {text-align: left;
+    max-width: 40%;
+    
+   }
+
+   .details_img
+   {
+    width:40vw;
+    height: 40vh;
+   }
+   .btns
+   {
+    margin: 4rem 4rem;
+   }
+  }
   

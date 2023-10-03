@@ -8,7 +8,7 @@ const Details = () => {
   console.log(project);
   return (
     <div className="details">
-      <h1 className="details_tittle">{project.tittle}</h1>
+      = <h1 className="details_tittle">{project.tittle}</h1>
       <img
         width={400}
         height={200}
@@ -17,7 +17,7 @@ const Details = () => {
         alt="albumStore"
       ></img>
       <span className="details_desc">{project.description}</span>
-      <div>
+      <div className="btns">
         <Link to={project.url} className="details_btn">
           Demo
         </Link>

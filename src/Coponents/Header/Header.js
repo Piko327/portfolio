@@ -7,7 +7,7 @@ export const Header = () => {
     if (e.pageX<=935 && visible === true)
   {
     setVisible(false) 
-    console.log("amet")
+
   } 
      else 
      setVisible(true);
