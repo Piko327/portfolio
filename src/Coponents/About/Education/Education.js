@@ -37,17 +37,16 @@ const Education = () => {
         </h1>
         <div className="education_desc">
           <p>
-          During my journey as a developer, I initially gained a solid
+            During my journey as a developer, I initially gained a solid
             foundation of Java programming. Through Java Fundamentals and Java
             Advanced courses, I learned about object-oriented programming (OOP)
             principles, SOLID principles, and more, which enabled me to design
             to build robust software systems. Moving into web development, I
-            immersed myself in the JavaScript. The Advanced JavaScript
-            course further enhanced my skills by exploring key concepts such as
+            immersed myself in the JavaScript. The Advanced JavaScript course
+            further enhanced my skills by exploring key concepts such as
             Functions, arrays, and objects. I honed my ability to write clean
             and efficient code, which enabled me to create dynamic and
             interactive web experience.
-
           </p>
         </div>
         <Swiper
@@ -108,14 +107,13 @@ const Education = () => {
       </div>
       <div className="education_desc">
         <p>
-        I improved my JavaScript skills through the practical JS Application
+          I improved my JavaScript skills through the practical JS Application
           course, mastering HTTP requests, REST API, and authentication. With a
           deeper understanding of JavaScript app architecture, I can design
           responsive web application. I know web technologies, I create robust
           and engaging web applications by leveraging the fundamental concepts
-          of JavaScript and the application architecture. My solutions are efficient
-          and dynamic.
-
+          of JavaScript and the application architecture. My solutions are
+          efficient and dynamic.
         </p>
       </div>
     </section>

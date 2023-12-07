@@ -1,8 +1,12 @@
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import Inputs from "./Inputs";
+import { auth } from "../../firebase/firebase";
+
 
 const Contact = () => {
+
+    console.log(auth)
   return (
     <>
       <div className="contact_title" id="contact">

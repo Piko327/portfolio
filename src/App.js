@@ -6,6 +6,7 @@ import { Home } from "./Coponents/Home/Home";
 import Projects from "./Coponents/Projects/Projects";
 import Details from "./Coponents/Details/Details";
 import { Routes, Route } from "react-router-dom";
+import Passwords from "./Coponents/Passwords/Passwords";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
           }
         />
         <Route path="/Details/:id" element={<Details />} />
+        <Route path="/Passwords" element={<Passwords />} />
       </Routes>
     </>
   );

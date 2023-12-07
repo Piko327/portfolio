@@ -6,6 +6,7 @@ import "./Coponents/About/Skills/Skills.css";
 import "./Coponents/Projects/Projects.css";
 import "./Coponents/Contact/Contact.css";
 import "./Coponents/Details/Details.css";
+import "./Coponents/Passwords/Passwords.css";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
