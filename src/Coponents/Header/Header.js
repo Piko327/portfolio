@@ -30,9 +30,6 @@ export const Header = () => {
             <li className="header_li">
               <a href="#contact">Contact</a>
             </li>
-            <li className="header_li">
-              <a href="/Passwords">Pass</a>
-            </li>
           </ul>
         </nav>
         <button className="material-symbols-outlined" onClick={dynamicNavbar}>
