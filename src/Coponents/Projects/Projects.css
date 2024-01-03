@@ -19,12 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem 4rem; 
+    padding: 2rem 4rem;
     gap: 4rem;
     min-height: 60vh;
     align-items: center;
-        max-width: 90vw;
-   
+    max-width: 90vw;
+
 }
 
 .title_container {
@@ -100,7 +100,7 @@
 
 .projectCard:hover .projectCard_hover {
     opacity: 1;
-
+    gap: 3rem;
 }
 
 .projectCard:hover .projectCard_img {
@@ -124,4 +124,3 @@
     color: var(--white);
     transition: 300ms ease-in-out;
 }
-
