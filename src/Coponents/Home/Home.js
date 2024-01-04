@@ -49,7 +49,7 @@ export const Home = () => {
                 <div>
                     <a
                         className="home_icon"
-                        href="https://drive.google.com/file/d/1pKHONMrRSZmZfDa4neWNE0gWuZ2tamRW/view?usp=sharing"          >
+                        href="https://drive.google.com/file/d/1GMUVgzcIY7CgsK1fJYh_thsMloydwrtm/view"          >
                         <button className="home_btn">Download CV</button>
                     </a>
                 </div>
