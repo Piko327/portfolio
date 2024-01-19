@@ -1,10 +1,10 @@
 import App from "./App";
-import "./Coponents/Home/Home.css";
-import "./Coponents/Header/Header.css";
-import "./Coponents/About/Education/Education.css";
-import "./Coponents/About/Skills/Skills.css";
-import "./Coponents/Projects/Projects.css";
-import "./Coponents/Contact/Contact.css";
+import "./Components/Home/Home.css";
+import "./Components/Header/Header.css";
+import "./Components/About/Education/Education.css";
+import "./Components/About/Skills/Skills.css";
+import "./Components/Projects/Projects.css";
+import "./Components/Contact/Contact.css";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
