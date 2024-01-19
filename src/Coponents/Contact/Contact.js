@@ -1,14 +1,13 @@
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import Inputs from "./Inputs";
-import { auth } from "../../firebase/firebase";
+import ShowEffectProvider from "../../helpers/ShowEffect";
 
 
 const Contact = () => {
 
-    console.log(auth)
   return (
-    <>
+   <ShowEffectProvider >
       <div className="contact_title" id="contact">
         <h2 className="contact_second_title"> Get in touch</h2>
         <h1 className="contact_main_title">Contact Me</h1>
@@ -32,7 +31,7 @@ const Contact = () => {
         </ul>
         <Inputs />
       </section>
-    </>
+ </ShowEffectProvider >
   );
 };
 
