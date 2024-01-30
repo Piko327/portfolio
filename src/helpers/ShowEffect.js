@@ -9,10 +9,13 @@ const ShowEffectProvider = ({ children }) => {
             scale: 1,
             transition: {
                 duration: 1,
+                delay: 0.3,
                 x: { duration: 1 },
-            },
+            }
         },
     };
+
+    
     return (
         <motion.div initial="hidden" variants={variant} whileInView="show"
         >
@@ -22,3 +25,4 @@ const ShowEffectProvider = ({ children }) => {
 };
 
 export default ShowEffectProvider;
+
