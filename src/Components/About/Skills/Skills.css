@@ -1,4 +1,3 @@
-
 :root {
     --white: #cbcdd1;
     --primary: #1c1b1b;
@@ -9,9 +8,13 @@
 .skills_section {
     background-color: var(--primary);
     padding: 3rem 1rem;
+    overflow: hidden;
 }
 
-
+.skills_container {
+    padding-left: 230vw;
+    overflow: hidden;
+}
 
 .skills_title {
     padding: 2rem;
@@ -25,14 +28,7 @@
 }
 
 .skills {
-
-
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    gap: 0.75rem;
- min-height: 18vh;
 }
 
 .skill {
@@ -40,58 +36,64 @@
     background-color: var(--white-grey);
     border-radius: 10px;
     padding: 0.3rem;
-    margin: 0.8rem;
+    margin: 2rem 2rem;
 }
-.skill:hover
-{
-        scale: 1.02;
-        transition: 200ms 
+
+.skill:hover {
+    scale: 1.02;
+    transition: 200ms
 }
 
 .skill_img {
-     width: 4rem;
-     }
-
+    width: 5rem;
+    border-radius: 10px;
+}
 
 .skill_title {
     font-family: sans-serif;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0.3rem;
     letter-spacing: 1px;
     text-align: center;
     font-style: oblique;
 
-
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-    .skills
-    {padding-left: 8rem;
-        padding-right:8rem;
-        gap: 1rem;
+@media only screen and (min-width: 492px) {
+    .skills_container {
+        padding-left: 130vw;
+        overflow: hidden;
     }
-.skill_img {
-    width: 6rem;
-    }
-
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 892px) {
+    .skills_container {
+        padding-left: 70vw;
+        overflow: hidden;
+    }
 
+    .skills {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        gap: 1rem;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) 
-{
-    
     .skill_img {
         width: 7rem;
-        }
-        .skills
-        {
-            gap: 2rem;
-        }
     }
-    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .skill_img {
+        width: 9rem;
+    }
+
+    .skills {
+        gap: 2rem;
+    }
+}

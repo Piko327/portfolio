@@ -112,7 +112,6 @@ const Education = () => {
                                 title={"MySQL"}
                             />{" "}
                         </SwiperSlide>
-                        ...
                     </Swiper>
                 </div>
                 <div className="education_desc">
