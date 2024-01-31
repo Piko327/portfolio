@@ -35,8 +35,8 @@ const variant2 = {
 };
     return (
         <>
-            <section className="contact_container">
-                <ul className="card_container">
+            <section  id="contact" className="contact_container">
+                <ul className="card_container" >
                     <h3 className="input_title">Talk to me</h3>
                     <motion.div initial="hidden" variants={variant} whileInView="show">
                         <li className="contact_card">

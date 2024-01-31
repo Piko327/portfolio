@@ -15,13 +15,6 @@ export const Header = () => {
         }
     }, [width])
 
-    const dynamicNavbar = () => {
-        if (width <= 935 && visible === true) {
-            setVisible(false)
-        }
-        else
-            setVisible(true);
-    };
 
     return (
         <>
@@ -29,23 +22,23 @@ export const Header = () => {
                 <div className="shell">
                     <div className="header__inner">
                         <nav className={visible ? "header__nav active" : "header__nav "}>
-                            <ul className="header__ul" onClick={dynamicNavbar}>
+                            <ul className="header__ul" onClick={() => width < 800 ? setVisible(prev => !prev) : setVisible(false)} >
                                 <li className="header__li">
-                                    <a href="#about">About</a>
+                                    <a href="#about">Learning Path</a>
                                 </li>
 
                                 <li className="header__li ">
-                                    <a href="#projects">Projects</a>
+                                    <a href="#projects">Project Gallery</a>
                                 </li>
                                 <li className="header__li">
-                                    <a href="#contact">Contact</a>
+                                    <a href="#contact">Let's Connect</a>
                                 </li>
                             </ul>
                         </nav>
                         {visible ?
-                            <HiMenuAlt3 className="header__btn hidden" onClick={dynamicNavbar} /> :
-                            
-                            < MdClose className="header__btn hidden" onClick={dynamicNavbar} />}
+                            <HiMenuAlt3 className="header__btn hidden" onClick={() => setVisible(prev => !prev)} /> :
+
+                            < MdClose className="header__btn hidden" onClick={() => setVisible(prev => !prev)} />}
                     </div>
                 </div>
 

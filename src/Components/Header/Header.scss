@@ -5,11 +5,12 @@
     &__inner {
         position: absolute;
         top: 0;
-        left: -.1rem;
+        left: -.2rem;
         width: 100%;
     }
 
     &__ul {
+        position: relative;
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -18,14 +19,14 @@
         justify-content: space-around;
     }
 
-    &__li > a {
+    &__li>a {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.5rem;
         color: var(--white);
         transition: color .2s ease-in-out;
     }
 
-    &__li > a:hover {
+    &__li>a:hover {
         color: var(--purple);
     }
 
@@ -64,7 +65,6 @@
 
     .header {
         &__inner {
-            position: relative;
             width: 100%;
             left: 0;
         }
@@ -74,11 +74,12 @@
         }
 
         &__nav {
+            position: sticky;
             width: 100%;
-            top: 0;
+            top: 30px;
             left: 0;
             height: 6rem;
-            background-color: aqua;
+            background-color: var(--primary);
         }
 
         &__nav.active {

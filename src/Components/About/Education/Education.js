@@ -7,7 +7,6 @@ import Card from "./Card";
 import "swiper/css/effect-coverflow";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { RiBookletLine } from "react-icons/ri";
-import { motion } from "framer-motion";
 import ShowEffectProvider from "../../../helpers/ShowEffect";
 
 const Education = () => {
