@@ -1,9 +1,9 @@
 import "./App.css";
-import About from "./Components/About/About";
-import Contact from "./Components/Contact/Contact";
-import { Header } from "./Components/Header/Header";
-import { Home } from "./Components/Home/Home";
-import Projects from "./Components/Projects/Projects";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import { Header } from "./components/Header/Header";
+import { Hero } from "./components/Hero/Hero";
+import Projects from "./components/Projects/Projects";
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
         <div>
             <Header />
 
-            <Home />
+            <Hero />
 
             <About />
 

@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Neon&display=swap');
-
-
-
 
 .first_part {
   display: flex;
@@ -19,7 +15,7 @@
 
 
 
-.home {
+.hero {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -28,7 +24,7 @@
 
 }
 
-.home_title {
+.hero__title {
   display: flex;
   margin-top: 2rem;
   padding: 1rem;
@@ -41,18 +37,18 @@
   transition: 0.3s;
 }
 
-.home_title:hover {
+.hero__title:hover {
   text-shadow: var(--white)0px 0 3px;
 }
 
-.home_title_one {
+.hero__title_one {
   padding: 1px 8px;
   border-radius: 5px;
   font-weight: 600;
   background: var(--accent);
 }
 
-.home_second_title {
+.hero__second_title {
   padding: 1rem;
   gap: 5px;
   display: flex;
@@ -69,18 +65,18 @@
   transition: 0.3s;
 }
 
-.home_second_title:hover {
+.hero__second_title:hover {
 
   text-shadow: var(--accent)0px 0 3px;
 }
 
-.home_second_title_second {
+.hero__second_title_second {
   color: #3B50B2;
   font-weight: 600;
   padding-left: 9rem;
 }
 
-.home_description {
+.hero__description {
   display: block;
   font-family: sans-serif;
   margin-bottom: 2rem;
@@ -92,7 +88,7 @@
   padding: 0rem 1rem;
 }
 
-.home_img {
+.hero__img {
   background-color: var(--white-grey);
   cursor: pointer;
   width: 300px;
@@ -105,7 +101,7 @@
   object-fit: contain;
 }
 
-.home_icons {
+.hero__icons {
 
   display: flex;
   gap: 1rem;
@@ -113,11 +109,11 @@
 
 }
 
-.home_icon {
+.hero__icon {
   color: var(--white);
 }
 
-.home_icon:hover {
+.hero__icon:hover {
   scale: 1.2;
   transition: 300ms ease-in-out;
 
@@ -125,11 +121,11 @@
 }
 
 
-.home_img:hover {
+.hero__img:hover {
   transform: scale(1.01);
 }
 
-.home_btn {
+.hero__btn {
 
   display: block;
   width: 10rem;
@@ -146,7 +142,7 @@
 
 }
 
-.home_btn:hover {
+.hero__btn:hover {
   color: var(--white);
   transform: scale(1.05);
   box-shadow: 0px 0px 5px 1px var(--white);
@@ -156,16 +152,16 @@
 @media only screen and (min-width: 820px) {
 
 
-  .home_title {
+  .hero__title {
     margin-top: 3.25rem;
 
   }
 
-  .home_second_title {
+  .hero__second_title {
     flex-direction: row;
   }
 
-  .home_second_title_second {
+  .hero__second_title_second {
     padding: 2rem 0rem;
   }
 

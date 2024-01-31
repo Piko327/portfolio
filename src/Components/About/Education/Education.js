@@ -7,7 +7,7 @@ import Card from "./Card";
 import "swiper/css/effect-coverflow";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { RiBookletLine } from "react-icons/ri";
-import ShowEffectProvider from "../../../helpers/ShowEffect";
+import ShowEffectProvider from "../../../utils/ShowEffect";
 
 const Education = () => {
     const { width } = useWindowDimensions();

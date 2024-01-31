@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { projects } from "../../helpers/projectData";
-import ShowEffectProvider from "../../helpers/ShowEffect";
+import { projects } from "../../utils/projectData";
+import ShowEffectProvider from "../../utils/ShowEffect";
 
 
 function Projects() {
