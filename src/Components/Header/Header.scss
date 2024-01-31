@@ -20,14 +20,15 @@
     }
 
     &__li>a {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Mitr', sans-serif;
         font-size: 1.5rem;
         color: var(--white);
+        font-weight: 400;
         transition: color .2s ease-in-out;
     }
 
     &__li>a:hover {
-        color: var(--purple);
+        color: var(--pink);
     }
 
     &__nav {
@@ -37,8 +38,8 @@
         z-index: 2;
         height: 20rem;
         width: 60vw;
-        backdrop-filter: blur(10px);
-        background: rgb(49, 8, 123, 0.3);
+
+        backdrop-filter: blur(30px);
         transition: top 0.3s ease-out;
     }
 
@@ -53,7 +54,7 @@
         right: 2rem;
         z-index: 4;
         font-size: 1.7rem;
-        color: var(--purple);
+        color: var(--pink);
     }
 }
 
@@ -79,7 +80,8 @@
             left: 0;
             width: 100%;
             height: 6rem;
-            background-color: var(--primary);
+            background: rgb(22, 7, 21);
+            background: radial-gradient(circle, rgba(22, 7, 21, 1) 0%, rgba(8, 16, 25, 1) 100%);
         }
 
         &__nav.active {

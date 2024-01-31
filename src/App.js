@@ -13,11 +13,6 @@ function App() {
 
             <Hero />
 
-            <About />
-
-
-
-            <Contact />
 
         </div>
     );
