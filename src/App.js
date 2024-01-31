@@ -5,29 +5,21 @@ import { Header } from "./Components/Header/Header";
 import { Home } from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
 
-import { Routes, Route } from "react-router-dom";
 function App() {
     return (
-        <>
-            <Routes>
-                <Route
-                    path="/"
-                    element={
-                        <>
-                            <Header />
 
-                            <Home />
+        <div>
+            <Header />
 
-                            <About />
+            <Home />
 
-                            <Projects />
+            <About />
 
-                            <Contact />
-                        </>
-                    }
-                />RR
-            </Routes>
-        </>
+
+
+            <Contact />
+
+        </div>
     );
 }
 

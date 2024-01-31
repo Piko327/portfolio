@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import Inputs from "./Inputs";
-import ShowEffectProvider from "../../helpers/ShowEffect";
 import { motion } from "framer-motion"
 
 

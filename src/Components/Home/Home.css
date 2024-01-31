@@ -2,14 +2,6 @@
 
 
 
-:root {
-  --white: #cbcdd1;
-  --primary: #1c1b1b;
-  --accent: #3B50B2;
-  --white-grey: #393838;
-}
-
-
 
 .first_part {
   display: flex;
