@@ -13,11 +13,11 @@ const ProjectCard = ({ project }) => {
                 alt="albumStore"
             ></img>
             <div className="projectCard_hover">
-                <Link to={`${project.url}`} className="projectCard_hover_btn" >
+                <Link to={`${project?.url}`} className="projectCard_hover_btn" >
                 Demo 
                 </Link>
 
-                <Link to={`${project.github}`} className="projectCard_hover_btn" >
+                <Link to={`${project?.github}`} className="projectCard_hover_btn" >
                     Github 
                 </Link>
             </div>

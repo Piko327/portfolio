@@ -1,13 +1,8 @@
-:root {
-    --white: #f7e8e8;
-    --primary: #081019;
-    --purple: #da4876;
-    --blue:#110028;
-        
-}
+
 
 :root {
     --white: #f7e8e8;
+    --dark-white: #ebc6c6;
     --primary: #081019;
     --pink: #da4876;
     --dark-purple: #110028;

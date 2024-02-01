@@ -19,15 +19,15 @@
         padding: 2rem;
     }
 
-    &__li>a {
+    &__li > a {
         font-family: 'Mitr', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: var(--white);
         font-weight: 400;
         transition: color .2s ease-in-out;
     }
 
-    &__li>a:hover {
+    &__li > a:hover {
         color: var(--pink);
     }
 
@@ -72,6 +72,10 @@
 
         &__ul {
             flex-direction: row;
+        }
+
+        &__li>a {
+            font-size: 1.6rem;
         }
 
         &__nav {

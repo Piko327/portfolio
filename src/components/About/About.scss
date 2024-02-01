@@ -1,0 +1,202 @@
+.education {
+    background: rgb(22, 7, 21);
+    background: radial-gradient(circle, rgba(22, 7, 21, 1) 0%, rgba(8, 16, 25, 1) 100%);
+    color: var(--white);
+
+
+    .swiper-pagination>span {
+        color: var(--pink);
+        background-color: var(--pink);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: var(--pink);
+    }
+
+    hr {
+        padding: 1px;
+        border-radius: 30px;
+        color: var(--pink);
+        background-color: var(--dark-white);
+        border: none
+    }
+
+    &__inner {
+        margin: 4rem 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        max-width: 90%;
+        text-transform: capitalize;
+        text-align: center;
+        margin: auto;
+        margin-top: 4rem;
+    }
+
+    &__description {
+        font-family: 'Mitr', sans-serif;
+        font-size: 1.35rem;
+        margin: 0rem 1rem;
+        padding: 2rem 1rem;
+        color: var(--dark-white);
+        text-align: left;
+        max-width: 90%;
+    }
+
+    &__title>svg {
+        color: var(--pink);
+        vertical-align: middle;
+        font-size: 2.25rem;
+        padding: 0rem 5px;
+        rotate: -15deg;
+    }
+
+    .card {
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .2s;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: scale(1.15);
+    }
+
+    .card_img {
+        margin: 1rem;
+        border: 1px solid;
+        border-color: var(--accent);
+        border-radius: 5px;
+        width: 16rem;
+        transition: all 1s ease;
+    }
+
+    .card_title {
+        margin-top: 2rem;
+        padding: 1 3rem;
+        font-style: italic;
+        color: var(--dark-white);
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .swiper {
+            width: 85%;
+        }
+
+        .card_img {
+            width: 22rem;
+        }
+
+        .education {
+            &__description {
+                width: 60%;
+                margin: auto;
+                font-size: 1.6rem;
+            }
+
+            &__title {
+                max-width: 50%;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.skills_section {
+    background-color: var(--white);
+    padding: 3rem 1rem;
+    overflow: hidden;
+}
+
+.skills_container {
+    padding-left: 230vw;
+    overflow: hidden;
+}
+
+.skills_title {
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    text-align: center;
+    background-color: var(--accent-grey);
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin: 2rem 2rem;
+}
+
+.skill:hover {
+    scale: 1.02;
+    transition: 200ms
+}
+
+.skill_img {
+    width: 5rem;
+    border-radius: 10px;
+}
+
+.skill_title {
+    font-family: sans-serif;
+    color: var(--accent);
+    font-size: 1.25rem;
+    padding: 0.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: oblique;
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 492px) {
+    .skills_container {
+        padding-left: 130vw;
+        overflow: hidden;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 892px) {
+    .skills_container {
+        padding-left: 70vw;
+        overflow: hidden;
+    }
+
+    .skills {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        gap: 1rem;
+    }
+
+    .skill_img {
+        width: 7rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .skill_img {
+        width: 9rem;
+    }
+
+    .skills {
+        gap: 2rem;
+    }
+}

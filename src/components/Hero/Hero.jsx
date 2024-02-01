@@ -1,11 +1,10 @@
 import './Hero.scss'
 import { motion } from "framer-motion";
-import Icons from './Icons';
+import Buttons from './Buttons';
 import { SlideFromLeft, SlideFromTop } from '../../utils/variants'
 import Avatar from './Avatar';
 
 export const Hero = () => {
-
 
     return (
         <section className='hero'>
@@ -17,24 +16,17 @@ export const Hero = () => {
 
                     <motion.div initial="hidden" variants={SlideFromTop} whileInView="show">
                         <div className="hero__content">
+
                             <div className="hero__title">
                                 <p >front-end </p>
 
                                 <p >developer</p>
                             </div>
                             <p className="hero__description">
-                                A programmer with experience in building personal websites and
-                                Apps with JavaScript / React / CSS / HTML
+                                Experienced developer capable of building dynamic websites and applications, showcasing skills in JavaScript / React / CSS / HTML through successful personal projects. Ready to bring that same passion and expertise to elevate your projects.
                             </p>
 
-                            <Icons />
-
-                            <div className="hero__btn">
-                                <a
-                                    href="https://drive.google.com/file/d/1GMUVgzcIY7CgsK1fJYh_thsMloydwrtm/view"          >
-                                    Download CV
-                                </a>
-                            </div>
+                            <Buttons />
                         </div>
                     </motion.div>
                 </div>
