@@ -5,7 +5,7 @@ const Card = ({ certificate}) => {
         <div className='card'>
             <h1 className='card_title'>{certificate.title}</h1>
             
-            <img className='card_img' src={certificate.img} alt="certificate" ></img>
+            <img className='card_img' src={certificate.img } alt="certificate" />
 
         </div>
     )

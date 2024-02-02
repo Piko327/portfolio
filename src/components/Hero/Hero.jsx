@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Buttons from './Buttons';
 import { SlideFromLeft, SlideFromTop } from '../../utils/variants'
 import Avatar from './Avatar';
+import { heroInfo } from '../../utils/InfoStore';
+import AnimatedText from '../AnimatedText';
 
 export const Hero = () => {
 
@@ -18,12 +20,13 @@ export const Hero = () => {
                         <div className="hero__content">
 
                             <div className="hero__title">
-                                <p >front-end </p>
+                                <p >front-end</p>
 
                                 <p >developer</p>
                             </div>
+
                             <p className="hero__description">
-                                Experienced developer capable of building dynamic websites and applications, showcasing skills in JavaScript / React / CSS / HTML through successful personal projects. Ready to bring that same passion and expertise to elevate your projects.
+                                <AnimatedText splitString={heroInfo[0].content} />
                             </p>
 
                             <Buttons />

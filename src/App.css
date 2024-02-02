@@ -125,7 +125,9 @@ blockquote,
 q {
     quotes: none;
 }
-
+p {
+    overflow: hidden;
+}
 html {
     scroll-behavior: smooth;
 }

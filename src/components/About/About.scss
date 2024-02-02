@@ -2,7 +2,7 @@
     background: rgb(22, 7, 21);
     background: radial-gradient(circle, rgba(22, 7, 21, 1) 0%, rgba(8, 16, 25, 1) 100%);
     color: var(--white);
-
+    margin-bottom: 6rem;
 
     .swiper-pagination>span {
         color: var(--pink);
@@ -14,13 +14,6 @@
         color: var(--pink);
     }
 
-    hr {
-        padding: 1px;
-        border-radius: 30px;
-        color: var(--pink);
-        background-color: var(--dark-white);
-        border: none
-    }
 
     &__inner {
         margin: 4rem 0;
@@ -37,6 +30,9 @@
     }
 
     &__description {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
         font-family: 'Mitr', sans-serif;
         font-size: 1.35rem;
         margin: 0rem 1rem;
@@ -79,8 +75,11 @@
     .card_title {
         margin-top: 2rem;
         padding: 1 3rem;
+        letter-spacing: 1.2px;
+        word-spacing: 1px;
+        font-weight: 400;
         font-style: italic;
-        color: var(--dark-white);
+        color: var(--accent);
         font-size: 1.5rem;
     }
 
@@ -95,7 +94,7 @@
 
         .education {
             &__description {
-                width: 60%;
+                width: 65%;
                 margin: auto;
                 font-size: 1.6rem;
             }
@@ -103,40 +102,56 @@
             &__title {
                 max-width: 50%;
                 font-size: 1.8rem;
+
             }
         }
     }
 }
 
-.skills_section {
-    background-color: var(--white);
-    padding: 3rem 1rem;
-    overflow: hidden;
-}
 
-.skills_container {
-    padding-left: 230vw;
-    overflow: hidden;
-}
 
-.skills_title {
-    padding: 2rem;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.75rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: var(--accent);
-}
+//Skills
 
 .skills {
-    display: flex;
+    position: relative;
+    background: rgb(218, 72, 118);
+    background: linear-gradient(362deg, rgba(218, 72, 118, 1) 0%, rgba(221, 93, 131, 1) 0%, rgba(223, 113, 144, 1) 1%, rgba(77, 58, 68, 1) 65%, #081019 86%);
+    padding: 3rem 1rem;
+    overflow: hidden;
+
+    &__container {
+        padding-left: 170vw;
+        overflow: hidden;
+    }
+
+    &__title {
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: var(--pink);
+    }
+
+    &__title h3 {
+        font-style: italic;
+        padding: 2rem;
+        font-weight: 400;
+        color: var(--dark-white);
+    }
+
+    &__container ul {
+        display: flex;
+    }
 }
 
 .skill {
-    text-align: center;
-    background-color: var(--accent-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 0.3rem;
     margin: 2rem 2rem;
@@ -147,14 +162,14 @@
     transition: 200ms
 }
 
-.skill_img {
+.skill-img {
     width: 5rem;
     border-radius: 10px;
 }
 
-.skill_title {
+.skill-title {
     font-family: sans-serif;
-    color: var(--accent);
+    color: var(--white);
     font-size: 1.25rem;
     padding: 0.3rem;
     letter-spacing: 1px;
@@ -163,40 +178,49 @@
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 492px) {
-    .skills_container {
-        padding-left: 130vw;
-        overflow: hidden;
+    .skills {
+        &__container {
+            padding-left: 130vw;
+            overflow: hidden;
+        }
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 892px) {
-    .skills_container {
-        padding-left: 70vw;
-        overflow: hidden;
-    }
-
     .skills {
-        padding-left: 8rem;
-        padding-right: 8rem;
-        gap: 1rem;
+        &__container {
+            padding-left: 30vw;
+            overflow: hidden;
+        }
+
+        &__container>ul {
+            padding-left: 8rem;
+            padding-right: 8rem;
+            gap: 1rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__title h3 {
+            font-size: 1.75rem;
+        }
     }
 
-    .skill_img {
+    .skill-img {
         width: 7rem;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .skill_img {
+    .skill-img {
         width: 9rem;
     }
 
-    .skills {
+    .skills__container>ul {
         gap: 2rem;
     }
 }

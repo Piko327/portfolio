@@ -1,3 +1,17 @@
+import jsAdvanced from '../assets/certificates/JSAdvanced.jpeg'
+import FundamentalsJava from '../assets/certificates/FundamentalsJava.jpeg'
+import JavaOOP from '../assets/certificates/JavaOOP.jpeg'
+import JSApplications from '../assets/certificates/JSApplications.jpeg'
+import JavaAdvanced from '../assets/certificates/JavaAdvanced.jpeg'
+import MySQL from '../assets/certificates/MySQL.jpeg'
+import mysql from '../assets/skills/mysql.png'
+import js from '../assets/skills/js.png'
+import html from '../assets/skills/html.png'
+import github from '../assets/skills/github.png'
+import firebase from '../assets/skills/firebase.png'
+import css from '../assets/skills/css.png'
+import react from '../assets/skills/react.png'
+import tailwind from '../assets/skills/tailwind.png'
 
 
 export const projectsInfo = [
@@ -29,55 +43,66 @@ export const projectsInfo = [
             "Music Library is place that you can save your albums .You can Add ,Delete and  Edit your favorite albums.I use React ,Tailwind CSS and SoftUni back-end server to made it.Also you have Authentication that allows you to Register and Login in to your account.",
     },
 ];
+export const educationInfo = [{
+    content: "This trajectory progressed into a comprehensive Java Object-Oriented Programming (OOP) course, fostering mastery of SOLID principles and instilling a profound understanding of OOP. These experiences form the bedrock of my programming expertise, endowing me with a comprehensive command of Java and the fundamental tenets of object-oriented design.".split(" ")
+}, {
+    content: "Initiating my programming journey, I acquired a robust grounding in Java, commencing with a fundamental course elucidating core coding principles. Seeking depth, I undertook an advanced Java program, delving into intricate elements including arrays, functional programming, and data structures.".split(" ")
+}, {
+    content: "Driven by an escalating passion for programming, I transitioned into the dynamic realm of JavaScript. An advanced JavaScript course broadened my scope, acquainting me with asynchronous programming and functional concepts. This interest led to a JavaScript application course, where I methodically explored the intricacies of web development. From orchestrating HTTP requests to mastering REST APIs, I refined my skills in constructing Single Page Applications and executing Client-Side Rendering.".split(" ")
+}, {
+    content: "Concurrently, my exploration of HTML and CSS laid the groundwork for a seamless transition to React. This multifaceted learning journey, complemented by hands-on projects, converged with an internship where I deepened my understanding of clean code and BEM methodology, solidifying my unwavering commitment to perpetual learning and professional advancement.".split(" ")
+}];
 
+export const heroInfo = [
+    { content: "Experienced developer capable of building dynamic websites and applications, showcasing skills in JavaScript / React / CSS / HTML through successful personal projects. Ready to bring that same passion and expertise to elevate your projects.".split(" ") }
+];
 export const skillsInfo = [
     {
         id: 1,
         title: "html",
-        image: "/skills/html.png",
+        image: html,
         color: "#fc490b"
-
     },
     {
         id: 2,
         title: "css",
-        image: "/skills/css.png",
+        image: css,
         color: "#2465f1"
     },
     {
         id: 3,
         title: "js",
-        image: "/skills/js.png",
+        image: js,
         color: "yellow"
     },
     {
         id: 4,
         title: "react",
-        image: "/skills/react.png",
+        image: react,
         color: "#61dbfb"
     },
     {
         id: 5,
         title: "github",
-        image: "/skills/github.png",
+        image: github,
         color: "#171515"
     },
     {
         id: 6,
         title: "tailwind",
-        image: "/skills/tailwind.png",
+        image: tailwind,
         color: "#01b7d6"
     },
     {
         id: 7,
         title: "mysql",
-        image: "/skills/mysql.png",
+        image: mysql,
         color: "grey"
     },
     {
         id: 8,
         title: "firebase",
-        image: "/skills/firebase.png",
+        image: firebase,
         color: "#ffa001"
     },
 ];
@@ -86,33 +111,32 @@ export const skillsInfo = [
 export const certificateInfo = [
     {
         id: 1,
-        img: "/static/media/JS Advanced - September 2022 - Certificate.01fdfb7231e737035058.jpeg",
+        img: jsAdvanced,
         title: "JS Advanced "
     },
     {
         id: 2,
-        img: "/static/media/JS Applications - October 2022 - Certificate.c5894a4056488928cd2a.jpeg",
+        img: JSApplications,
         title: "JS Applications"
     },
     {
         id: 3,
-        img: "/static/media/Java Advanced - January 2022 - Certificate.9c90e9ab07c846432f2e.jpeg",
+        img: JavaAdvanced,
         title: "Java Advanced"
     },
     {
         id: 4,
-        img: "/static/media/Java OOP - February 2022 - Certificate.b84bd2eb2504f363d189.jpeg",
+        img: JavaOOP,
         title: "Java OOP"
     },
     {
         id: 5,
-        img: "/static/media/Programming Fundamentals with Java - September 2021 - Certificate.bfe0b456c69cd26b44fa.jpeg",
+        img: FundamentalsJava,
         title: "Java Fundamentals"
-
     },
     {
         id: 6,
-        img: "/static/media/MySQL - September 2022 - Certificate.f4b83f0745561ef93687.jpeg",
+        img: MySQL,
         title: "MySQL"
     }
 ]

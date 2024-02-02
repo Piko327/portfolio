@@ -8,11 +8,9 @@ import "swiper/css/effect-coverflow";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { RiBookletLine } from "react-icons/ri";
 import ShowEffectProvider from "../../utils/ShowEffect";
-import { certificateInfo } from "../../utils/InfoStore";
-
-
-
-
+import { certificateInfo, educationInfo } from "../../utils/InfoStore";
+import { motion } from "framer-motion";
+import AnimatedText from "../AnimatedText";
 
 const Education = () => {
     const { width } = useWindowDimensions();
@@ -31,6 +29,8 @@ const Education = () => {
             setSlidesPerViewCount(1);
         }
     };
+    const test =
+        "This trajectory progressed into a comprehensive Java Object-Oriented Programming(OOP) course, fostering mastery of SOLID principles andinstilling a profound understanding of OOP.These experiences form theedrock of my programming expertise, endowing me with a comprehensivecommand of Java and the fundamental tenets of object-oriented design.".split(" ")
     return (
         <ShowEffectProvider >
             <section className="education">
@@ -41,7 +41,14 @@ const Education = () => {
                         </h2>
 
                         <div className="education__description">
-                            <p>Initiating my programming journey, I acquired a robust grounding in Java, commencing with a fundamental course elucidating core coding principles. Seeking depth, I undertook an advanced Java program, delving into intricate elements including arrays, functional programming, and data structures. This trajectory progressed into a comprehensive Java Object-Oriented Programming (OOP) course, fostering mastery of SOLID principles and instilling a profound understanding of OOP. These experiences form the bedrock of my programming expertise, endowing me with a comprehensive command of Java and the fundamental tenets of object-oriented design.                            </p>
+
+                            <p>
+                                <AnimatedText splitString={educationInfo[1].content} />
+                            </p>
+
+                            <p>
+                                <AnimatedText splitString={educationInfo[0].content} />
+                            </p>
                         </div>
 
                         <h3 className="education__title">Certificates <RiBookletLine /></h3>
@@ -66,14 +73,17 @@ const Education = () => {
                         >
                             {certificateInfo.map((certificate) =>
                                 <SwiperSlide key={certificate.id}>
-                                    <Card certificate={certificate}
-                                    />
+                                    <Card certificate={certificate} />
                                 </SwiperSlide>)}
                         </Swiper>
 
                         <div className="education__description">
                             <p>
-                                Driven by an escalating passion for programming, I transitioned into the dynamic realm of JavaScript. An advanced JavaScript course broadened my scope, acquainting me with asynchronous programming and functional concepts. This interest led to a JavaScript application course, where I methodically explored the intricacies of web development. From orchestrating HTTP requests to mastering REST APIs, I refined my skills in constructing Single Page Applications and executing Client-Side Rendering. Concurrently, my exploration of HTML and CSS laid the groundwork for a seamless transition to React. This multifaceted learning journey, complemented by hands-on projects, converged with an internship where I deepened my understanding of clean code and BEM methodology, solidifying my unwavering commitment to perpetual learning and professional advancement.
+                                <AnimatedText splitString={educationInfo[1].content} />
+                            </p>
+
+                            <p>
+                                <AnimatedText splitString={educationInfo[0].content} />
                             </p>
                         </div>
                     </div>

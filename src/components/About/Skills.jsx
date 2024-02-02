@@ -6,6 +6,7 @@ import {
     useSpring
 } from "framer-motion"
 import { skillsInfo } from "../../utils/InfoStore";
+import { BsStack } from "react-icons/bs";
 
 const Skills = () => {
 
@@ -13,6 +14,7 @@ const Skills = () => {
     const ghostRef = useRef(null)
     const [scrollRange, setScrollRange] = useState(0)
     const [viewportW, setViewportW] = useState(0)
+
 
     useLayoutEffect(() => {
         scrollRef && setScrollRange(scrollRef.current.scrollWidth)
@@ -40,26 +42,28 @@ const Skills = () => {
     const spring = useSpring(transform, physics)
 
     return (
-        <section className="skills_section">
+        <section className="skills">
 
-            <h1 className="skills_title"> Tech Stack</h1>
+            <div className="skills__title">
+                <h2>technologies</h2>
 
-            <div className="skills_container">
+                <h3> I have worked with  <BsStack style={{color:'pink'}} /></h3>
+            </div>
+
+            <div className="skills__container">
                 <motion.section
-                    
                     ref={scrollRef}
                     style={{ x: spring }}
-
                 >
-                    <ul className="skills" >
+                    <ul >
                         {
                             skillsInfo.map(({ id, title, image, color }) => (
                                 <li className="skill" key={id} style={{ boxShadow: `1px 1px 2px ${color}` }} >
-                                    <img src={image} alt="icons" className="skill_img"></img>
-                                    <h2 className="skill_title" style={{ textShadow: `0px 0px 3px ${color}` }} >{title}</h2>
+                                    <img src={image} alt="icons" className="skill-img"></img>
+                                    <h2 className="skill-title" style={{ textShadow: `0px 0px 3px ${color}` }} >{title}</h2>
                                 </li>
                             ))}
-                        
+
                     </ul>
                 </motion.section>
                 <div ref={ghostRef} className="ghost" />
