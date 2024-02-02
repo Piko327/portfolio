@@ -15,6 +15,8 @@ function App() {
 
             <About />
 
+            <div className="layer1" />
+
             <Projects />
 
             <Contact />

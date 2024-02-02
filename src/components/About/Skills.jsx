@@ -41,34 +41,35 @@ const Skills = () => {
     const physics = { damping: 15, mass: 0.27, stiffness: 55 }
     const spring = useSpring(transform, physics)
 
-    return (
+    return (<>
         <section className="skills">
+            <div className="skills__inner">
+                <div className="skills__title">
+                    <h2>technologies</h2>
 
-            <div className="skills__title">
-                <h2>technologies</h2>
+                    <h3> I have worked with  <BsStack style={{ color: 'dark' }} /></h3>
+                </div>
 
-                <h3> I have worked with  <BsStack style={{color:'pink'}} /></h3>
+                <div className="skills__container">
+                    <motion.section
+                        ref={scrollRef}
+                        style={{ x: spring }}
+                    >
+                        <ul >
+                            {
+                                skillsInfo.map(({ id, title, image, color }) => (
+                                    <li className="skill" key={id} style={{ boxShadow: `1px 1px 2px ${color}` }} >
+                                        <img src={image} alt="icons" className="skill-img"></img>
+                                        <h2 className="skill-title" style={{ textShadow: `0px 0px 3px ${color}` }} >{title}</h2>
+                                    </li>
+                                ))}
+                        </ul>
+                    </motion.section>
+                    <div ref={ghostRef} className="ghost" />
+                </div>
+
             </div>
-
-            <div className="skills__container">
-                <motion.section
-                    ref={scrollRef}
-                    style={{ x: spring }}
-                >
-                    <ul >
-                        {
-                            skillsInfo.map(({ id, title, image, color }) => (
-                                <li className="skill" key={id} style={{ boxShadow: `1px 1px 2px ${color}` }} >
-                                    <img src={image} alt="icons" className="skill-img"></img>
-                                    <h2 className="skill-title" style={{ textShadow: `0px 0px 3px ${color}` }} >{title}</h2>
-                                </li>
-                            ))}
-
-                    </ul>
-                </motion.section>
-                <div ref={ghostRef} className="ghost" />
-            </div>
-        </section >
+        </section ></>
     );
 };
 
