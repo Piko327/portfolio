@@ -8,7 +8,7 @@ const Avatar = () => {
             <div className="hero__avatar-title">
                 <p>Hello</p>
 
-                <p>, I'm Fiki </p>
+                <p> I'm Fiki </p>
             </div>
             <motion.div
                 initial="hidden"

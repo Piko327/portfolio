@@ -7,30 +7,31 @@
     min-height: 80vh;
     margin-top: 2rem;
 
-    .hero__inner {
+    &__inner {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 4rem;
     }
+
 
     &__avatar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.25rem;
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     &__avatar-title {
         display: flex;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         letter-spacing: 1.2px;
         word-spacing: 1px;
         margin-top: 2rem;
@@ -45,6 +46,7 @@
         padding: 1px 8px;
         border-radius: 5px;
         background: var(--pink);
+
     }
 
     &__avatar-title>p:nth-child(2) {
@@ -52,8 +54,7 @@
     }
 
     &__title>p:nth-child(1) {
-        font-size: 1.75rem;
-        padding: 1rem;
+        font-size: 1.25rem;
         text-transform: capitalize;
         color: var(--white);
         transition: all .3s ease;
@@ -69,23 +70,22 @@
 
     &__title>p:nth-child(2) {
         font-weight: 600;
-        font-size: 1.75rem;
-        padding-left: 9rem;
+        font-size: 1.25rem;
+        padding-left: 5rem;
         color: var(--pink);
-        text-align: center;
         transition: all .2s ease-in-out;
     }
 
     &__description {
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-align: center;
         padding: 0rem 1rem;
         color: var(--white);
     }
 
     &__avatar-img {
-        width: 280px;
-        height: 260px;
+        width: 240px;
+        height: 220px;
         border-radius: 100%;
         filter: brightness(85%);
         cursor: pointer;
@@ -98,7 +98,7 @@
     &__icons {
         display: flex;
         gap: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     &__icon {
@@ -118,7 +118,7 @@
 
     &__btn>a {
         display: flex;
-        font-size: .75rem;
+        font-size: .4rem;
         font-weight: 600;
         padding: .75rem;
         color: var(--white);
@@ -135,68 +135,61 @@
     }
 }
 
-@media only screen and (min-width: 820px) {
 
-    .hero {
-        &__avatar-title {
-            margin-top: 3.25rem;
-        }
-
-        &__title {
-            flex-direction: row;
-        }
-
-        &__title {
-            padding: 2rem 0rem;
-        }
-
-        &__avatar-img {
-            width: 350px;
-            height: 340px;
-        }
-    }
-}
 
 @media only screen and (min-width: 992px) {
 
     .hero {
-        &__avatar-title {
-            font-size: 2rem;
+        &__title {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 0rem;
+            gap: 1rem;
         }
 
+        &__avatar-title {
+            font-size: 1.5rem;
+            margin-top: 8rem;
+        }
+
+        &__avatar-img {
+            width: 310px;
+            height: 300px;
+        }
+
+
         &__title>p:nth-child(2) {
-            font-size: 2.25rem;
+            font-size: 1.5rem;
             align-self: center;
             margin-right: 0.25rem;
             padding: .125rem;
         }
 
         &__title>p:nth-child(1) {
-            font-size: 2.25rem;
+            font-size: 1.5rem;
         }
 
         &__description {
             display: inline;
-            font-size: 1.6rem;
+            font-size: 1.25rem;
             width: 40vw;
         }
 
         &__avatar {
             align-items: center;
             gap: 3rem;
-            margin-top: 4rem;
             padding-bottom: 3rem;
         }
 
         &__content {
             align-items: center;
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 6rem;
             padding-top: 3rem;
         }
 
         &__btn>a {
-            font-size: 1.125rem;
+            font-size: .6rem;
         }
     }
 }
@@ -204,8 +197,8 @@
 @media only screen and (min-width: 1200px) {
     .hero {
         &__avatar-img {
-            width: 420px;
-            height: 400px;
+            width: 360px;
+            height: 320px;
         }
     }
 }

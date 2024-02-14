@@ -105,7 +105,7 @@ section {
 body {
     line-height: 1;
     background: rgb(22, 7, 21);
-    background: radial-gradient(circle, #160715 0%, rgba(8, 16, 25, 1) 100%);
+    background: radial-gradient(circle, #160715 0%, #081019 100%);
     font-family: 'Mitr', sans-serif;
 }
 
@@ -187,13 +187,13 @@ a {
         }
     
         .layer2 {
-            aspect-ratio: 600/180;
+            aspect-ratio: 900/250;
         }
 
 }
 
 @media only screen and (min-width: 1200px) {
     .shell {
-        padding: 0rem 4rem;
+        padding: 0rem 5rem;
     }
 }

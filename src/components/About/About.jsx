@@ -7,8 +7,12 @@ const About = () => {
     return (
         <section className='about' id="about">
             <Education />
+
             <div className="layer2" />
+
             <Skills />
+
+
         </section>
     )
 }
