@@ -10,8 +10,8 @@ const ProjectCard = ({ project }) => {
 
             <div className="projects__card-img">
                 <img
-                    width={350}
-                    height={240}
+                    width={280}
+                    height={220}
                     src={project.img}
                     alt="albumStore"
                 />
@@ -22,9 +22,10 @@ const ProjectCard = ({ project }) => {
             </div>
 
             <div className="projects__card-btns">
+                <Link to={project.url}> Demo</Link>
+
                 <Link to={project.github}>Github</Link>
 
-                <Link to={project.url}>Try Demo</Link>
             </div>
         </div>
     );

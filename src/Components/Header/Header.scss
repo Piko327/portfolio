@@ -19,7 +19,7 @@
         padding: 2rem;
     }
 
-    &__li > a {
+    &__li>a {
         font-family: 'Mitr', sans-serif;
         font-size: 1rem;
         color: var(--white);
@@ -27,7 +27,7 @@
         transition: color .2s ease-in-out;
     }
 
-    &__li > a:hover {
+    &__li>a:hover {
         color: var(--pink);
     }
 
@@ -61,10 +61,13 @@
 @media screen and (min-width: 768px) {
 
     .hidden {
-        display: none
+        display: none;
+
     }
 
     .header {
+        margin-bottom: 5rem;
+
         &__inner {
             width: 100%;
             left: 0;
@@ -91,5 +94,16 @@
         &__nav.active {
             top: 0vh;
         }
+    }
+}
+
+@media screen and (min-width: 990px) {
+
+    .hidden {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 0rem;
     }
 }
