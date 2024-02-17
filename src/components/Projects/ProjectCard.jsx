@@ -25,7 +25,6 @@ const ProjectCard = ({ project }) => {
                 <Link to={project.url}> Demo</Link>
 
                 <Link to={project.github}>Github</Link>
-
             </div>
         </div>
     );

@@ -42,7 +42,7 @@ const Inputs = () => {
   };
   return (
     <form ref={form} className="contact_form" onSubmit={sendEmail}>
-      <div className="contact_inputs">
+      <div className="contact__inputs">
         <h3 className="input_title">Write me</h3>
         <input
           type="text"

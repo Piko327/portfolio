@@ -36,7 +36,7 @@ const Skills = () => {
     const transform = useTransform(
         scrollYProgress,
         [1, 0],
-        [0, -2 * scrollRange + viewportW]  // Increase the multiplier for a larger scroll distance
+        [0, -2 * scrollRange + viewportW] 
     );
     const physics = { damping: 15, mass: 0.27, stiffness: 55 }
     const spring = useSpring(transform, physics)

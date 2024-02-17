@@ -21,43 +21,51 @@ const Contact = () => {
         },
     }
 
-const variant2 = {
-    hidden: { opacity: 0, x: 100 },
-    show: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 1.2,
-            delay: 0.2,
-            x: { duration: 1.2 },
+    const variant2 = {
+        hidden: { opacity: 0, x: -100 },
+        show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1.2,
+                delay: 0.2,
+                x: { duration: 1.2 },
+            },
         },
-    },
-};
+    };
     return (
-        <>
-            <section  id="contact" className="contact_container">
+        <div className="contact">
+            <section id="contact" className="contact__container">
                 <ul className="card_container" >
                     <h3 className="input_title">Talk to me</h3>
+
                     <motion.div initial="hidden" variants={variant} whileInView="show">
-                        <li className="contact_card">
+                        <li className="contact__card">
                             <AiOutlineMail className="icon" />
-                            <h3 className="contact_card_title">Email</h3>
+
+                            <h3 className="contact__card_title">Email</h3>
+
                             <span className="card_data">fikii.business@gmail.com</span>
                         </li>
 
 
-                    </motion.div> <motion.div initial="hidden" variants={variant2} whileInView="show">
-                        <li className="contact_card">
+                    </motion.div>
+
+                    <motion.div initial="hidden" variants={variant2} whileInView="show">
+                        <li className="contact__card">
                             <AiOutlinePhone className="icon" />
-                            <h3 className="contact_card_title">Phone</h3>
+
+                            <h3 className="contact__card_title">Phone</h3>
+
                             <span className="card_data">+359885643812</span>
-                        </li></motion.div>
+                        </li>
+                    </motion.div>
                 </ul>
 
                 <motion.div initial="hidden" variants={variant2} whileInView="show">
                     <Inputs />
                 </motion.div>
-            </section></>
+            </section></div>
     );
 };
 
