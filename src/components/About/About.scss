@@ -115,7 +115,7 @@
     background: linear-gradient(180deg, rgba(247, 232, 232, 1) 2%, rgba(228, 98, 139, 1) 100%);
 
     &__container {
-        padding-left: 150vw;
+        padding-left: 240vw;
         overflow: hidden;
     }
 
@@ -177,7 +177,7 @@
 @media only screen and (min-width: 492px) {
     .skills {
         &__container {
-            padding-left: 1250vw;
+            padding-left: 150vw;
             overflow: hidden;
         }
     }
@@ -186,7 +186,7 @@
 @media only screen and (min-width: 892px) {
     .skills {
         &__container {
-            padding-left: 90vw;
+            padding-left: 60vw;
             overflow: hidden;
         }
 
