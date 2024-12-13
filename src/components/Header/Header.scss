@@ -1,0 +1,109 @@
+@import '/../portfolio/src/utils/variables.css';
+
+.header {
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: -.2rem;
+        width: 100%;
+    }
+
+    &__ul {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    &__li>a {
+        font-family: 'Mitr', sans-serif;
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: 400;
+        transition: color .2s ease-in-out;
+    }
+
+    &__li>a:hover {
+        color: var(--pink);
+    }
+
+    &__nav {
+        position: relative;
+        top: 0vh;
+        left: 40vw;
+        z-index: 2;
+        height: 20rem;
+        width: 60vw;
+
+        backdrop-filter: blur(30px);
+        transition: top 0.3s ease-out;
+    }
+
+    &__nav.active {
+        top: -100vw;
+        height: 0;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 4;
+        font-size: 1.7rem;
+        color: var(--pink);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .hidden {
+        display: none;
+
+    }
+
+    .header {
+        margin-bottom: 5rem;
+
+        &__inner {
+            width: 100%;
+            left: 0;
+        }
+
+        &__ul {
+            flex-direction: row;
+        }
+
+        &__li>a {
+            font-size: 1.25rem;
+        }
+
+        &__nav {
+            position: sticky;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 6rem;
+            background: rgb(22, 7, 21);
+            background: radial-gradient(circle, rgba(22, 7, 21, 1) 0%, rgba(8, 16, 25, 1) 100%);
+        }
+
+        &__nav.active {
+            top: 0vh;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+
+    .hidden {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 0rem;
+    }
+}
