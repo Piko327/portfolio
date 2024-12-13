@@ -1,8 +1,8 @@
+import './Contact.scss'
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import Inputs from "./Inputs";
 import { motion } from "framer-motion"
-import "../Contact/Contact.scss"
 
 
 const Contact = () => {

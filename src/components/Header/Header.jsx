@@ -1,8 +1,9 @@
+import './Header.scss'
 import { useEffect, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import "../Header/Header.scss"
+
 export const Header = () => {
     const [visible, setVisible] = useState(true);
     const { width } = useWindowDimensions();
